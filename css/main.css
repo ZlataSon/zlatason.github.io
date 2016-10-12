@@ -21,6 +21,12 @@ h5 {
     text-align: center;
 }
 
+ul.nav {
+    display: inline-block;
+    min-width: 150px;
+    margin: 15px;
+}
+
 ul.nav li {
     text-decoration: none;
     padding: 15px;
