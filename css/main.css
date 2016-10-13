@@ -1,7 +1,8 @@
 body {
     background: rgb(171, 171, 171);
     font-size: 16px;
-    line-height: 1.5px;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -42,4 +43,8 @@ ul.nav li a:hover,
 ul.nav li a:focus {
     text-decoration: none;
     color: rgb(113, 0, 3);
+}
+
+span {
+    font-weight: 700;
 }
