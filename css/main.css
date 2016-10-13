@@ -448,6 +448,7 @@ ul.method {
     -webkit-margin-end: 0;
     -webkit-padding-start: 0;
     padding: 10px;
+    width: 90%;
 }
 
 li {
