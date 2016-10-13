@@ -17,6 +17,7 @@ body {
 /*Grid*/
 
 .container {
+    margin-top: 35px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -421,7 +422,8 @@ body {
 
 /*Other style*/
 
-.container-fluid {
+.wrapper {
+    margin: 35px 0;
     background: rgba(81, 102, 101, 0.9);
     color: rgb(255, 255, 255);
 }
