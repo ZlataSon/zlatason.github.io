@@ -11,6 +11,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     font-family: 'Lato', sans-serif;
+    width: 100%;
 }
 
 .container {
@@ -18,7 +19,6 @@ body {
     padding: 15px;
     background: rgba(81, 102, 101, 0.9);
     color: rgb(255, 255, 255);
-    width: 100%;
 }
 
 h3 {
@@ -33,7 +33,7 @@ h5 {
 
 ul.nav,
 ul.method {
-    display: inline-block;
+    display: block;
     width: 30%;
     margin: 15px auto;
     -webkit-margin-before: 0;
@@ -41,13 +41,15 @@ ul.method {
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
     -webkit-padding-start: 0;
+    padding: 10px;
 }
 
 li {
     text-decoration: none;
-    padding: 15px;
+    padding: 15px 5px;
     list-style: none;
     width: 100%;
+    margin: 0 auto;
 }
 
 li a,
