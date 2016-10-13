@@ -1,5 +1,5 @@
 html {
-    background: rgb(171, 171, 171) url("/img/phone.jpg") no-repeat fixed center center;
+    background: rgb(171, 171, 171) url("../img/phone.jpg") no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -33,7 +33,7 @@ h5 {
 ul.nav,
 ul.method {
     display: inline-block;
-    width: 30%;
+    width: 25%;
     margin: 15px auto;
 }
 
