@@ -6,10 +6,12 @@ body {
 }
 
 .container {
-    margin: 15px;
+    margin: 15px auto;
     padding: 5px;
     background: rgb(81, 102, 101);
     color: rgb(255, 255, 255);
+    height: auto;
+    width: 900px;
 }
 
 h3 {
