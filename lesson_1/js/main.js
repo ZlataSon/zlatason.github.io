@@ -1,12 +1,12 @@
 
 // Join method
-var colors = ["Green", "Orange", "Blue"];
+var colors = ["Green", "Orange", "Blue", "Indigo", "Olive", "Purple"];
 document.getElementById("join").innerHTML = colors.join(" *** ");
 
 // Shift & Unshift methods
-var color = ["Black", "Yellow", "Red"];
+var color = ["Black", "Yellow", "Red", "Silver"];
 color.shift();
-color.unshift("Lime");
+color.unshift("Lime", "White");
 document.getElementById("shift-unshift").innerHTML = color;
 
 // Splice method
