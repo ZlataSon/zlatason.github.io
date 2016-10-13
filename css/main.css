@@ -6,12 +6,10 @@ body {
 }
 
 .container {
-    margin: 15px auto;
-    padding: 5px;
+    margin: 15px;
+    padding: 15px;
     background: rgb(81, 102, 101);
     color: rgb(255, 255, 255);
-    height: auto;
-    width: 900px;
 }
 
 h3 {
@@ -62,7 +60,6 @@ span {
 
 a.button {
     margin: 25px auto;
-    text-align: center;
     border: 1px solid rgb(171, 171, 171);
     background: transparent;
     border-radius: 5px;
@@ -76,4 +73,9 @@ a.button:focus {
     text-decoration: none;
     color: rgb(0, 0, 0);
     background: rgba(171, 171, 171, 0.8);
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
 }
