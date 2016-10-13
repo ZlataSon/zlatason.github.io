@@ -1,7 +1,7 @@
 
 // Join method
 var colors = ["Green", "Orange", "Blue"];
-document.getElementById("join").innerHTML = colors.toString();
+document.getElementById("join").innerHTML = colors.join(" * ");
 
 // Join method
 var color = ["Black", "Yellow", "Orange"];
