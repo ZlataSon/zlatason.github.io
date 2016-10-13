@@ -25,3 +25,9 @@ var fruit = ["Banana", "Apricot", "Cherry", "Grape"];
 fruit.pop();
 fruit.push("Mango");
 document.getElementById("pop-push").innerHTML = fruit;
+
+// Sort & Reverse methods
+var vegetable = ["Broccoli", "Carrot", "Pea", "Tomato"];
+fruit.sort();
+fruit.reverse();
+document.getElementById("sort-reverse").innerHTML = vegetable;
