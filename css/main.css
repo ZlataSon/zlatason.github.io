@@ -424,6 +424,7 @@ body {
 
 .wrapper {
     margin: 35px 0;
+    padding: 20px;
     min-height: 200px;
     background: rgba(81, 102, 101, 0.9);
     color: rgb(255, 255, 255);
