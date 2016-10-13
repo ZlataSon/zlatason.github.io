@@ -33,7 +33,7 @@ h5 {
 
 ul.nav,
 ul.method {
-    display: block;
+    display: inline-block;
     width: 30%;
     margin: 15px auto;
     -webkit-margin-before: 0;
