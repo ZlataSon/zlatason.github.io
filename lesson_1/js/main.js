@@ -41,3 +41,8 @@ document.getElementById("slice").innerHTML = flower + "<br>" + "<br>" + myFlower
 var flowers = ["Iris", "Lotus", "Orchid"];
 document.getElementById("value").innerHTML = flowers.valueOf() + "- valueOf";
 document.getElementById("string").innerHTML = flowers.toString() + "- toString";
+
+// Method split
+var namesFlower = 'Peony, Roses, Tulip, Василий';
+var arr = namesFlower.split(', ');
+document.getElementById("split").innerHTML = arr.length;
