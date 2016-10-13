@@ -58,9 +58,17 @@ span {
     border-radius: 5px;
 }
 
-button {
+a.button {
     margin: 15px auto;
     border: 1px solid rgb(171, 171, 171);
+    background: transparent;
     border-radius: 5px;
     color: rgb(171, 171, 171);
+}
+
+a.button:hover,
+a.button:focus {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background: rgba(171, 171, 171, 0.8);
 }
