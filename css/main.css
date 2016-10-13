@@ -494,7 +494,7 @@ span {
     background: rgba(171, 171, 171, 0.5);
     word-wrap: break-word;
     font-size: 12px;
-    margin: 5px;
+    margin: 5px 0;
     letter-spacing: 1.5px;
 }
 
