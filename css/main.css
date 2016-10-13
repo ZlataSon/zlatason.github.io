@@ -447,21 +447,22 @@ ul.method {
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
     -webkit-padding-start: 0;
-    padding: 10px;
-    width: 90%;
+    margin: 10px 0;
 }
 
 li {
     text-decoration: none;
     padding: 15px 5px;
     list-style: none;
-    margin: 0 auto;
+    margin: 0;
 }
 
 li a,
 p {
     text-decoration: none;
     color: rgb(209, 206, 169);
+    padding: 5px 0;
+    margin: 0;
 }
 
 li a:hover,
@@ -477,7 +478,7 @@ span {
 }
 
 .method div {
-    padding: 10px 15px;
+    padding: 10px 5px;
     border: 1px solid rgb(171, 171, 171);
     border-radius: 5px;
     background: rgba(171, 171, 171, 0.5);
