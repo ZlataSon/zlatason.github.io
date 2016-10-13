@@ -40,11 +40,13 @@ li a {
 }
 
 li a:hover,
-li a:focus {
+li a:focus,
+p {
     text-decoration: none;
     color: rgb(113, 0, 3);
 }
 
 span {
     font-weight: 700;
+    color: rgb(255, 255, 255);
 }
