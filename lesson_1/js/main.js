@@ -19,3 +19,9 @@ var fruits = ["Apricot", "Cherry", "Grape", "Kiwi"];
 var vegetables = ["Broccoli", "Carrot", "Pea", "Tomato"];
 var food = fruits.concat(vegetables);
 document.getElementById("concat").innerHTML = food;
+
+// Pop & Push methods
+var fruit = ["Banana", "Apricot", "Cherry", "Grape", "Apple", "Mango"];
+fruit.pop();
+fruit.push("Kiwi");
+document.getElementById("pop-push").innerHTML = fruit;

@@ -441,7 +441,15 @@ h5 {
     text-align: center;
 }
 
-ul.nav,
+ul.nav {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+    margin: 15px 25px;
+}
+
 ul.method {
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
@@ -453,7 +461,7 @@ ul.method {
 
 li {
     text-decoration: none;
-    padding: 15px 5px;
+    padding: 15px;
     list-style: none;
     margin: 0;
     width: auto;
