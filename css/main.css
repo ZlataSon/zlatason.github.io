@@ -2,7 +2,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     font-family: 'Lato', sans-serif;
-    background: rgb(171, 171, 171) url("../img/phone.jpg") no-repeat scroll center center;
+    background: rgb(171, 171, 171) url("img/phone.jpg") no-repeat scroll center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
