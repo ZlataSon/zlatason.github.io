@@ -35,7 +35,7 @@ document.getElementById("sort-reverse").innerHTML = vegetable;
 // Slice method
 var flower = ["Azalea", "Begonia", "Crocus", "Daisy", "Freesia", "Hibiscus"];
 var myFlower = flower.slice(2);
-document.getElementById("slice").innerHTML = flower + "<br>" + myFlower;
+document.getElementById("slice").innerHTML = flower + "<br>" + "<br>" + myFlower;
 
 // Methods valueOf and toString
 var flowers = ["Iris", "Lotus", "Orchid"];
