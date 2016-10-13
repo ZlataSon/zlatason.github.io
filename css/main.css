@@ -37,14 +37,14 @@ li {
 
 li a {
     text-decoration: none;
-    color: rgb(185, 255, 6);
+    color: rgb(209, 206, 169);
 }
 
 li a:hover,
 li a:focus,
 p {
     text-decoration: none;
-    color: rgb(209, 206, 169);
+    color: rgb(185, 255, 6);
 }
 
 span {
