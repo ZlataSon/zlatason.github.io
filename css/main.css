@@ -493,6 +493,8 @@ span {
     border-radius: 5px;
     background: rgba(171, 171, 171, 0.5);
     word-wrap: break-word;
+    font-size: 12px;
+    margin: 5px;
 }
 
 a.button {
