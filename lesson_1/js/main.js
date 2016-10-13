@@ -15,6 +15,7 @@ mainColor.splice(1, 2, "Red", "Fuchsia");
 document.getElementById("splice").innerHTML = mainColor;
 
 // Concat method
-var fruits = ["Apricot", "Cherry", "Grape", "Kiwi",];
-var vegetables = ["Broccoli", "Carrot", "Linus", "Linus"];
-var myChildren = fruits.concat(vegetables);
+var fruits = ["Apricot", "Cherry", "Grape", "Kiwi"];
+var vegetables = ["Broccoli", "Carrot", "Pea", "Tomato"];
+var food = fruits.concat(vegetables);
+document.getElementById("concat").innerHTML = food;
