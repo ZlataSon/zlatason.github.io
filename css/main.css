@@ -50,6 +50,7 @@ p {
 span {
     font-weight: 700;
     color: rgb(255, 255, 255);
+    padding: 0 5px;
 }
 
 .method div {
