@@ -10,7 +10,7 @@ color.unshift("Lime", "White");
 document.getElementById("shift-unshift").innerHTML = color;
 
 // Splice method
-var mainColor = ["Coral", "Aqua", "Gray", "Pink"];
+var mainColor = ["Coral", "Blue", "Gray", "Pink", "Violet", "Aqua"];
 mainColor.splice(1, 2, "Red", "Fuchsia");
 document.getElementById("splice").innerHTML = mainColor;
 
