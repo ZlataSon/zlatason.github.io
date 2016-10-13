@@ -28,6 +28,6 @@ document.getElementById("pop-push").innerHTML = fruit;
 
 // Sort & Reverse methods
 var vegetable = ["Pea", "Tomato", "Broccoli", "Carrot"];
-fruit.sort();
-//fruit.reverse();
+vegetable.sort();
+//vegetable.reverse();
 document.getElementById("sort-reverse").innerHTML = vegetable;
