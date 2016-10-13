@@ -35,12 +35,18 @@ ul.method {
     display: inline-block;
     width: 25%;
     margin: 15px auto;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
 }
 
 li {
     text-decoration: none;
     padding: 15px;
     list-style: none;
+    width: 100%;
 }
 
 li a,
