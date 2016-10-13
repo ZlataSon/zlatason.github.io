@@ -43,6 +43,6 @@ document.getElementById("value").innerHTML = flowers.valueOf() + "- valueOf";
 document.getElementById("string").innerHTML = flowers.toString() + "- toString";
 
 // Method split
-var namesFlower = 'Peony, Roses, Tulip, Василий';
+var namesFlower = 'Peony, Roses, Tulip';
 var arr = namesFlower.split(', ');
-document.getElementById("split").innerHTML = arr.length;
+document.getElementById("split").innerHTML = arr;
