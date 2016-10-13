@@ -59,11 +59,13 @@ span {
 }
 
 a.button {
-    margin: 15px auto;
+    margin: 25px auto;
+    text-align: center;
     border: 1px solid rgb(171, 171, 171);
     background: transparent;
     border-radius: 5px;
     color: rgb(171, 171, 171);
+    padding: 15px 5px;
 }
 
 a.button:hover,
