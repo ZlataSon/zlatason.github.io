@@ -31,3 +31,7 @@ var vegetable = ["Pea", "Tomato", "Broccoli", "Carrot"];
 vegetable.sort();
 vegetable.reverse();
 document.getElementById("sort-reverse").innerHTML = vegetable;
+
+// Find method
+var flower = ["Apricot", "Cherry", "Grape", "Kiwi"];
+document.getElementById("find").innerHTML = flower.find("Cherry", "Grape");
