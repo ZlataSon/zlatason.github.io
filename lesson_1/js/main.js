@@ -32,7 +32,7 @@ vegetable.sort();
 vegetable.reverse();
 document.getElementById("sort-reverse").innerHTML = vegetable;
 
-// Find method
-var flower = ["Apricot", "Cherry", "Grape", "Kiwi"];
-flower.filter(2)
-document.getElementById("find").innerHTML = flower;
+// Slice method
+var flower = ["Azalea", "Begonia", "Crocus", "Daisy", "Freesia", "Hibiscus"];
+var myFlower = flower.slice(2);
+document.getElementById("slice").innerHTML = flower + "<br>" + myFlower;
