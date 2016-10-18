@@ -499,10 +499,11 @@ span {
 }
 
 a.button {
-    margin: 25px auto;
+    display: inline-block;
+    margin: 10px auto;
     border: 1px solid rgb(171, 171, 171);
     background: transparent;
-    border-radius: 5px;
+    border-radius: 7px;
     color: rgb(255, 255, 255);
     padding: 10px 15px;
     text-decoration: none;
@@ -511,7 +512,7 @@ a.button {
 a.button:hover,
 a.button:focus {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     background: rgba(171, 171, 171, 0.8);
 }
 
