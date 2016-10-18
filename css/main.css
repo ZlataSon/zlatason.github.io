@@ -424,10 +424,10 @@ body {
 /*Other style*/
 
 .wrapper {
-    margin: 35px;
+    margin: 55px;
     padding: 20px;
     min-height: 200px;
-    background: rgba(81, 102, 101, 0.9);
+    background: rgba(66,81,120,0.85);
     color: rgb(255, 255, 255);
 }
 
