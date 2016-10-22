@@ -45,7 +45,7 @@ console.log(arrayMethodPush);
 Array.prototype.push = ArrayObject.push;
 console.log(arrayMethodPush.push(8));
 console.log(arrayMethodPush);
-document.getElementById("pop").innerHTML = arrayMethodPush;
+document.getElementById("push").innerHTML = arrayMethodPush;
 
 console.log("Method Slice");
 console.log(ArrayObject.slice.call(arrayMethodSlice, 1, 3));
