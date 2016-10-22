@@ -1,16 +1,39 @@
-html {
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
+}
+
+#main-body{
     background: rgb(171, 171, 171) url("../img/bg1.jpg") no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*height: 100vh;*/
 }
 
-body {
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: 'Lato', sans-serif;
+#lesson1{
+    background: rgb(171, 171, 171) url("../img/bg2.jpg") no-repeat fixed center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#lesson2{
+    background: rgb(171, 171, 171) url("../img/bg3.jpg") no-repeat fixed center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#lesson3{
+    background: rgb(171, 171, 171) url("../img/bg4.jpg") no-repeat fixed center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /*Grid*/
