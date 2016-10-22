@@ -24,14 +24,19 @@ ArrayObject.reverse = function () {
 
 };
 
+ArrayObject.sum = function () {
+
+};
+
 var arrayMethodPop = ['a', 'b', 'c', 4, 5, 6];
 var arrayMethodPush = ['a', 'b', 'c', 4, 5, 6];
 var arrayMethodSlice = ['a', 'b', 'c', 4, 5, 6];
 var arrayMethodJoin = ['a', 'b', 'c', 4, 5, 6];
 var arrayMethodReverse = ['a', 'b', 'c', 4, 5, 6];
+var arrayMethodSum = ['a', 'b', 'c', 4, 5, 6];
 
 console.log("Method Pop");
-console.log(ArrayObject.pop.call(arrayMethodPop));
+console.log(ArrayObject.pop.apply(arrayMethodPop));
 console.log(arrayMethodPop);
 console.log("Method Pop with prototype");
 Array.prototype.pop = ArrayObject.pop;
@@ -54,6 +59,7 @@ console.log(ArrayObject.slice.call(arrayMethodSlice, -2));
 console.log(arrayMethodSlice);
 Array.prototype.slice = ArrayObject.slice;
 console.log(arrayMethodSlice.slice(1, 3));
+document.getElementById("slice").innerHTML = arrayMethodSlice;
 
 console.log("Method Join");
 console.log(ArrayObject.join.call(arrayMethodJoin, "*"));
@@ -61,10 +67,20 @@ console.log(arrayMethodJoin);
 Array.prototype.join = ArrayObject.join;
 console.log(arrayMethodJoin.join("***"));
 console.log(arrayMethodJoin);
+document.getElementById("join").innerHTML = arrayMethodJoin;
 
 console.log("Method Reverse");
-console.log(ArrayObject.reverse.call(arrayMethodReverse));
+console.log(ArrayObject.reverse.apply(arrayMethodReverse));
 console.log(arrayMethodReverse);
 Array.prototype.reverse = ArrayObject.reverse;
 console.log(arrayMethodReverse.reverse());
 console.log(arrayMethodReverse);
+document.getElementById("reverse").innerHTML = arrayMethodReverse;
+
+console.log("Method Sum");
+console.log(ArrayObject.reverse.apply(arrayMethodSum));
+console.log(arrayMethodSum);
+Array.prototype.reverse = ArrayObject.reverse;
+console.log(arrayMethodSum.reverse());
+console.log(arrayMethodSum);
+document.getElementById("reverse").innerHTML = arrayMethodSum;
