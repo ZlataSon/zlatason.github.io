@@ -33,9 +33,11 @@ var arrayMethodReverse = ['a', 'b', 'c', 4, 5, 6];
 console.log("Method Pop");
 console.log(ArrayObject.pop.call(arrayMethodPop));
 console.log(arrayMethodPop);
+console.log("Method Pop with prototype");
 Array.prototype.pop = ArrayObject.pop;
 console.log(arrayMethodPop.pop());
 console.log(arrayMethodPop);
+document.getElementById("pop").innerHTML = arrayMethodPop;
 
 console.log("Method Push");
 console.log(ArrayObject.push.call(arrayMethodPush, 7));
@@ -43,6 +45,7 @@ console.log(arrayMethodPush);
 Array.prototype.push = ArrayObject.push;
 console.log(arrayMethodPush.push(8));
 console.log(arrayMethodPush);
+document.getElementById("pop").innerHTML = arrayMethodPush;
 
 console.log("Method Slice");
 console.log(ArrayObject.slice.call(arrayMethodSlice, 1, 3));
