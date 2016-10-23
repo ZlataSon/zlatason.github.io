@@ -34,7 +34,7 @@ ArrayObject.slice = function (start, finish) {
 ArrayObject.join = function (simbol = ', ') {
     var string = '';
     if (this.length == 0) return string;
-    for (i = 0; i < this.length - 1; i++) {
+    for (var i = 0; i < this.length - 1; i++) {
         string = string + this[i].toString();
         string = string + simbol;
     }
@@ -43,11 +43,16 @@ ArrayObject.join = function (simbol = ', ') {
 };
 
 ArrayObject.reverse = function () {
-
+    for (let i = 0, n = this.length - 1; i < n; i++, n--) {
+        var element = this[i];
+        this[i] = this[n];
+        this[n] = element;
+    }
+    return this;
 };
 
-ArrayObject.sum = function () {
-
+Number.prototype.sum = function (y=0) {
+    return this+(+y);
 };
 
 var arrayMethodPop = ['a', 'b', 'c', 4, 5, 6];
@@ -55,7 +60,6 @@ var arrayMethodPush = ['a', 'b', 'c', 4, 5, 6];
 var arrayMethodSlice = ['a', 'b', 'c', 4, 5, 6];
 var arrayMethodJoin = ['a', 'b', 'c', 4, 5, 6];
 var arrayMethodReverse = ['a', 'b', 'c', 4, 5, 6];
-var arrayMethodSum = ['a', 'b', 'c', 4, 5, 6];
 
 console.log("Method Pop");
 console.log(ArrayObject.pop.apply(arrayMethodPop));
@@ -93,16 +97,14 @@ document.getElementById("join").innerHTML = joinString;
 
 console.log("Method Reverse");
 console.log(ArrayObject.reverse.apply(arrayMethodReverse));
-console.log(arrayMethodReverse);
 Array.prototype.reverse = ArrayObject.reverse;
 console.log(arrayMethodReverse.reverse());
-console.log(arrayMethodReverse);
-document.getElementById("reverse").innerHTML = arrayMethodReverse;
+var reversArr = arrayMethodReverse.reverse();
+document.getElementById("reverse").innerHTML = reversArr;
 
 console.log("Method Sum");
-console.log(ArrayObject.sum.apply(arrayMethodSum));
-console.log(arrayMethodSum);
-Array.prototype.sum = ArrayObject.sum;
-console.log(arrayMethodSum.sum());
-console.log(arrayMethodSum);
-document.getElementById("sum").innerHTML = arrayMethodSum;
+var x = 9;
+console.log(11 .sum(6));
+console.log(x.sum(9));
+console.log(x.sum("Opps"));
+document.getElementById("sum").innerHTML = x.sum();
