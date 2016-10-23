@@ -106,5 +106,5 @@ console.log("Method Sum");
 var x = 9;
 console.log(11 .sum(6));
 console.log(x.sum(9));
-console.log(x.sum("Opps"));
+console.log(x.sum("89"));
 document.getElementById("sum").innerHTML = x.sum();
