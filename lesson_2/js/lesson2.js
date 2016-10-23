@@ -31,8 +31,15 @@ ArrayObject.slice = function (start, finish) {
     return result
 };
 
-ArrayObject.join = function () {
-
+ArrayObject.join = function (simbol = ', ') {
+    var string = '';
+    if (this.length == 0) return string;
+    for (i = 0; i < this.length - 1; i++) {
+        string = string + this[i].toString();
+        string = string + simbol;
+    }
+    string = string + this[i].toString();
+    return string
 };
 
 ArrayObject.reverse = function () {
@@ -71,7 +78,6 @@ console.log("Method Slice");
 console.log(ArrayObject.slice.call(arrayMethodSlice, 1, 3));
 console.log(ArrayObject.slice.call(arrayMethodSlice, 5));
 console.log(ArrayObject.slice.call(arrayMethodSlice, -3));
-console.log(arrayMethodSlice);
 Array.prototype.slice = ArrayObject.slice;
 console.log(arrayMethodSlice.slice(2, 4));
 var peremen = arrayMethodSlice.slice(2, -1);
