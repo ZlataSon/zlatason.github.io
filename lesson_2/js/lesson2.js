@@ -84,6 +84,7 @@ var peremen = arrayMethodSlice.slice(2, -1);
 document.getElementById("slice").innerHTML = peremen;
 
 console.log("Method Join");
+console.log(ArrayObject.join.call(arrayMethodJoin));
 console.log(ArrayObject.join.call(arrayMethodJoin, "*"));
 Array.prototype.join = ArrayObject.join;
 console.log(arrayMethodJoin.join("***"));
