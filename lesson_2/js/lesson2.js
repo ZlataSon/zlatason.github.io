@@ -9,7 +9,13 @@ ArrayObject.pop = function () {
 };
 
 ArrayObject.push = function () {
-
+    var parametrLength = arguments.length;
+    var elements = this.length;
+    for (var i = 0; i < parametrLength; i++) {
+        this[elements] = arguments[i];
+        elements++;
+    }
+    return this.length;
 };
 
 ArrayObject.slice = function () {
@@ -78,9 +84,9 @@ console.log(arrayMethodReverse);
 document.getElementById("reverse").innerHTML = arrayMethodReverse;
 
 console.log("Method Sum");
-console.log(ArrayObject.reverse.apply(arrayMethodSum));
+console.log(ArrayObject.sum.apply(arrayMethodSum));
 console.log(arrayMethodSum);
-Array.prototype.reverse = ArrayObject.reverse;
-console.log(arrayMethodSum.reverse());
+Array.prototype.sum = ArrayObject.sum;
+console.log(arrayMethodSum.sum());
 console.log(arrayMethodSum);
-document.getElementById("reverse").innerHTML = arrayMethodSum;
+document.getElementById("sum").innerHTML = arrayMethodSum;
