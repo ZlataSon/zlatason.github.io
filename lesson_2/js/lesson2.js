@@ -18,8 +18,17 @@ ArrayObject.push = function () {
     return this.length;
 };
 
-ArrayObject.slice = function () {
-
+ArrayObject.slice = function (start, finish) {
+    var result = [];
+    if (typeof start == "undefined") start = 0;
+    if (typeof finish == "undefined") finish = arguments.length;
+    if (start < 0) start = arguments.length + start;
+    if (finish < 0) finish = arguments.length + finish;
+    if ((start > finish) || (start > this.length)) return result;
+    for (var i = 0, n = start; n < finish; i++, n++) {
+        result[i] = this[n];
+    }
+    return result
 };
 
 ArrayObject.join = function () {
