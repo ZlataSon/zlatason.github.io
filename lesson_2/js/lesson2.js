@@ -85,11 +85,10 @@ document.getElementById("slice").innerHTML = peremen;
 
 console.log("Method Join");
 console.log(ArrayObject.join.call(arrayMethodJoin, "*"));
-console.log(arrayMethodJoin);
 Array.prototype.join = ArrayObject.join;
 console.log(arrayMethodJoin.join("***"));
-console.log(arrayMethodJoin);
-document.getElementById("join").innerHTML = arrayMethodJoin;
+var joinString = arrayMethodJoin.join(" * * ");
+document.getElementById("join").innerHTML = joinString;
 
 console.log("Method Reverse");
 console.log(ArrayObject.reverse.apply(arrayMethodReverse));
