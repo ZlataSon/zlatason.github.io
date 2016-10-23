@@ -21,9 +21,9 @@ ArrayObject.push = function () {
 ArrayObject.slice = function (start, finish) {
     var result = [];
     if (typeof start == "undefined") start = 0;
-    if (typeof finish == "undefined") finish = arguments.length;
-    if (start < 0) start = arguments.length + start;
-    if (finish < 0) finish = arguments.length + finish;
+    if (typeof finish == "undefined") finish = this.length;
+    if (start < 0) start = this.length + start;
+    if (finish < 0) finish = this.length + finish;
     if ((start > finish) || (start > this.length)) return result;
     for (var i = 0, n = start; n < finish; i++, n++) {
         result[i] = this[n];
@@ -69,12 +69,13 @@ document.getElementById("push").innerHTML = arrayMethodPush;
 
 console.log("Method Slice");
 console.log(ArrayObject.slice.call(arrayMethodSlice, 1, 3));
-console.log(ArrayObject.slice.call(arrayMethodSlice, 2));
-console.log(ArrayObject.slice.call(arrayMethodSlice, -2));
+console.log(ArrayObject.slice.call(arrayMethodSlice, 5));
+console.log(ArrayObject.slice.call(arrayMethodSlice, -3));
 console.log(arrayMethodSlice);
 Array.prototype.slice = ArrayObject.slice;
-console.log(arrayMethodSlice.slice(1, 3));
-document.getElementById("slice").innerHTML = arrayMethodSlice;
+console.log(arrayMethodSlice.slice(2, 4));
+var peremen = arrayMethodSlice.slice(2, -1);
+document.getElementById("slice").innerHTML = peremen;
 
 console.log("Method Join");
 console.log(ArrayObject.join.call(arrayMethodJoin, "*"));
