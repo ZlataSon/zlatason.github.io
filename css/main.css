@@ -21,7 +21,7 @@ body {
 }
 
 #lesson2{
-    background: rgb(171, 171, 171) url("../img/bg3.jpg") no-repeat fixed center center;
+    background: rgb(75,122,166) url("../img/bg3.jpg") no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -29,7 +29,15 @@ body {
 }
 
 #lesson3{
-    background: rgb(171, 171, 171) url("../img/bg4.jpg") no-repeat fixed center center;
+    background: rgb(96,84,76) url("../img/bg5.jpg") no-repeat fixed center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#lesson4{
+    background: rgb(24,28,55) url("../img/bg4.jpg") no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -64,7 +72,15 @@ body {
     margin: 55px;
     padding: 20px;
     min-height: 200px;
-    background: rgba(66,81,120,0.9);
+    background: rgba(96,84,76,0.85);
+    color: rgb(255, 255, 255);
+}
+
+#lesson4 .wrapper {
+    margin: 55px;
+    padding: 20px;
+    min-height: 200px;
+    background: rgba(24,28,55,0.9);
     color: rgb(255, 255, 255);
 }
 
