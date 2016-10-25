@@ -52,7 +52,6 @@ ArrayObject.reverse = function () {
 };
 
 Number.prototype.sum = function (y=0) {
-    if (isNaN(y)) y = 0;
     return this+(+y);
 };
 
@@ -109,7 +108,6 @@ console.log("Method Sum");
 var x = 9;
 console.log(11 .sum(6));
 console.log(x.sum(9));
-console.log(x.sum("Opps"));
 console.log("Method Sum with apply");
 console.log(Number.prototype.sum.apply(8, [25]));
 document.getElementById("sum").innerHTML = x.sum();
