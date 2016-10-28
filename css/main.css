@@ -523,7 +523,8 @@ span {
     padding: 0 5px;
 }
 
-.method div {
+.method div,
+div.practice {
     padding: 10px;
     border: 1px solid rgb(171, 171, 171);
     border-radius: 5px;
@@ -554,4 +555,8 @@ a.button:focus {
 
 .center {
     text-align: center;
+}
+
+.justify {
+    text-align: justify;
 }
