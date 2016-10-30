@@ -32,7 +32,7 @@ function sumRecursion(n) {
     if (n < 10) {
         return n; }
     else {
-            return n % 10 + sumRecursion(Math.floor(n / 10)); }
+        return n % 10 + sumRecursion(Math.floor(n / 10)); }
 }
 
 console.log("Task 1.3. The sum of the digits of a number with Recursion");
@@ -143,3 +143,33 @@ console.log(fibonacci(2));
 console.log(fibonacci(3));
 console.log(fibonacci(7));
 console.log(fibonacci(20));
+
+// Task 3
+
+function count(func, arg, steps){
+    console.time();
+    while(steps--){
+        func.apply(null, arg);
+    }
+    console.timeEnd();
+}
+
+console.log("Task 3.1 Factorial with Recursion and without Recursion");
+count(factorialRecursion, [10], 10000);
+count(factorial, [10], 10000);
+
+console.log("Task 3.2 Mathematical power (math degree) with Recursion and without Recursion");
+count(powerRecursion, [2,3], 10000);
+count(power, [2,3], 10000);
+
+console.log("Task 3.3 The sum of the digits of a number with Recursion and without Recursion");
+count(sumRecursion, [7328], 10000);
+count(sum, [7328], 10000);
+
+console.log("Task 3.4 The sum of number (sumTo(2) = 2 + 1 = 3) with Recursion and without Recursion");
+count(sumToRecursion, [100], 10000);
+count(sumTo, [100], 10000);
+
+console.log("Task 3.5 Fibonacci number with Recursion and without Recursion");
+count(fibonacciRecursion, [20], 10000);
+count(fibonacci, [20], 10000);
