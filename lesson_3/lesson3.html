@@ -24,13 +24,14 @@
         <div class="row">
             <div class="col-xs-12">
                 <ul>Home work Lesson 3:
-                    <li>1. Рекурсія (завдання 1.1 - 1.4: факторіал, степень числа, суми цифр, задачі з
-                        https://learn.javascript.ru/recursion#tasks)</li>
+                    <li>1. Рекурсія (завдання 1.1 - 1.5: факторіал, степень числа, суми цифр, <a
+                            href="https://learn.javascript.ru/recursion#tasks"
+                       >задачі з learn.javascript.ru</a> )</li>
 
                     <li>При виконанні цих завдань не можна використовувати цикли, рядки, масиви. Дозволена лише
                         рекурсія і арифметика.</li>
 
-                    <li>2. Виконати завдання 1.1 - 1.4 без використання рекурсії.</li>
+                    <li>2. Виконати завдання 1.1 - 1.5 без використання рекурсії.</li>
                     <li>3. Визначити який варіант працює швидше (наприклад, скільки часу треба на 10000 обчислень)</li>
                 </ul>
                 <p class="center">if you want to see the result in the console <span>click "Ctrl+Shift+J" or
@@ -43,7 +44,17 @@
                     1.1. Написати рекурсивну функцію для обчислення факторіалу
                 </div>
                 <div class="col-xs-6 practice">
-
+                    function factorialRecursion(n) {
+                    <br/>
+                    if (n == 0)
+                    <br/>
+                    return 1;
+                    <br/>
+                    else
+                    <br/>
+                    return n * factorialRecursion (n-1);
+                    <br/>
+                    }
                 </div>
             </div>
             <hr/>
@@ -53,11 +64,11 @@
                     1.2. Написати рекурсивну функцію для обчислення степені числа
                 </div>
                 <div class="col-xs-6 practice">
-                    function stepen(x, n) {
+                    function powerRecursion(x, n) {
                     <br/>
                     if (n != 1) {
                     <br/>
-                    return x * stepen(x, n - 1);
+                    return x * powerRecursion(x, n - 1);
                     <br/>
                     } else {
                     <br/>
@@ -74,6 +85,27 @@
                     (наприклад, сума цифр числа 3742 буде 3+7+4+2 = 16)
                 </div>
                 <div class="col-xs-6 practice">
+                    function sumRecursion(n) {
+                    <br/>
+                    if (n < 10) {
+                    <br/>
+                    return n; }
+                    <br/>
+                    else {
+                    <br/>
+                    return n % 10 + sumRecursion(Math.floor(n / 10)); }
+                    <br/>
+                    }
+                </div>
+            </div>
+            <hr/>
+
+            <div class="col-xs-12">
+                <div class="col-xs-5 justify">
+                    1.4. Задача 1 з learn.javascript.ru - Вирахувати сумму чисел до данного (sumTo(4) = 4 + 3 + 2 + 1 =
+                    10) через рекурсію, т.я. sumTo(n) = n + sumTo(n-1) для n > 1.
+                </div>
+                <div class="col-xs-6 practice">
 
                 </div>
             </div>
@@ -81,7 +113,7 @@
 
             <div class="col-xs-12">
                 <div class="col-xs-5 justify">
-                    1.4. Задачі з https://learn.javascript.ru/recursion#tasks
+                    1.5. Задача 2 з learn.javascript.ru -  Числа Фібоначчі з рекурсією
                 </div>
                 <div class="col-xs-6 practice">
 
@@ -112,7 +144,17 @@
                     2.2. Написати функцію для обчислення степені числа без рекурсії
                 </div>
                 <div class="col-xs-6 practice">
-
+                    function power(x, n) {
+                    <br/>
+                    var a = x;
+                    <br/>
+                    for (var i = 1; i < n; i++) {
+                    <br/>
+                    a *= x; }
+                    <br/>
+                    return a;
+                    <br/>
+                    }
                 </div>
             </div>
             <hr/>
@@ -123,6 +165,27 @@
                     (наприклад, сума цифр числа 3742 буде 3+7+4+2 = 16) без рекурсії
                 </div>
                 <div class="col-xs-6 practice">
+                    function sum(num) {
+                    <br/>
+                    var n = 0;
+                    <br/>
+                    for(i = num; i > 0; i = Math.floor(i / 10))
+                    <br/>
+                    n += (i % 10);
+                    <br/>
+                    return n;
+                    <br/>
+                    }
+                </div>
+            </div>
+            <hr/>
+
+            <div class="col-xs-12">
+                <div class="col-xs-5 justify">
+                    2.4. Задача 1 з learn.javascript.ru - Вирахувати сумму чисел до данного (sumTo(4) = 4 + 3 + 2 + 1 =
+                    10) без рекурсії
+                </div>
+                <div class="col-xs-6 practice">
 
                 </div>
             </div>
@@ -130,12 +193,13 @@
 
             <div class="col-xs-12">
                 <div class="col-xs-5 justify">
-                    2.4. Задачі з https://learn.javascript.ru/recursion#tasks без рекурсії
+                    2.5. Задача 2 з learn.javascript.ru -  Числа Фібоначчі без рекурсії
                 </div>
                 <div class="col-xs-6 practice">
 
                 </div>
             </div>
+
         </div>
     </div>
 </div>
