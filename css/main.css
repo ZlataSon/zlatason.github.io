@@ -503,16 +503,15 @@ li {
     width: auto;
 }
 
-li a,
-p {
+a, p {
     text-decoration: none;
     color: rgb(209, 206, 169);
     padding: 5px 0;
     margin: 0;
 }
 
-li a:hover,
-li a:focus{
+a:hover,
+a:focus {
     text-decoration: none;
     color: rgb(185, 255, 6);
 }
@@ -525,7 +524,7 @@ span {
 
 .method div,
 div.practice {
-    padding: 10px;
+    padding: 10px 15px;
     border: 1px solid rgb(171, 171, 171);
     border-radius: 5px;
     background: rgba(171, 171, 171, 0.5);
@@ -559,16 +558,7 @@ a.button:focus {
 
 .justify {
     text-align: justify;
-    padding: 10px;
-}
-
-.line {
-    margin: 15px auto;
-    padding: 1px;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.7);
-    height: 1px;
-    width: 100%;
+    padding: 10px 15px;
 }
 
 hr {
