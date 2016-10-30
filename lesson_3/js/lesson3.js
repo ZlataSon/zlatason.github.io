@@ -72,10 +72,10 @@ console.log(fibonacciRecursion(20));
 
 // Task 2.1 Факторіал без рекурсії
 function factorial(n) {
-    var z = 1;
+    var a = 1;
     for (var i = 1; i <= n; i++) {
-        z = z * i; }
-    return (z);
+        a = a * i; }
+    return a;
 }
 
 console.log("Task 2.1. Factorial without Recursion");
