@@ -120,7 +120,7 @@ function sumTo(sum) {
     return n;
 }
 
-console.log("Task 2.4. The sum of number sumTo(2) = 2 + 1 = 3");
+console.log("Task 2.4. The sum of number sumTo(2) = 2 + 1 = 3 without Recursion");
 console.log(sumTo(2));
 console.log(sumTo(1));
 console.log(sumTo(100));
@@ -137,7 +137,7 @@ function fibonacci(n) {
     return b;
 }
 
-console.log("Task 1.5. Fibonacci number without Recursion");
+console.log("Task 2.5. Fibonacci number without Recursion");
 console.log(fibonacci(1));
 console.log(fibonacci(2));
 console.log(fibonacci(3));
