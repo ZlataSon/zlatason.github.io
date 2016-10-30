@@ -24,13 +24,8 @@
         <div class="row">
             <div class="col-xs-12">
                 <ul>Home work Lesson 3:
-                    <li>1. Рекурсія</li>
-                    <li>1.1. Написати рекурсивну функцію для обчислення факторіалу</li>
-                    <li>1.2. Написати рекурсивну функцію для обчислення степені числа</li>
-                    <li>1.3. Написати рекурсивну функцію для обчислення суми цифр цілого числа
-                        (наприклад, сума цифр числа 3742 буде 3+7+4+2 = 16)
-                    </li>
-                    <li>1.4. Задачі з https://learn.javascript.ru/recursion#tasks</li>
+                    <li>1. Рекурсія (завдання 1.1 - 1.4: факторіал, степень числа, суми цифр, задачі з
+                        https://learn.javascript.ru/recursion#tasks)</li>
 
                     <li>При виконанні цих завдань не можна використовувати цикли, рядки, масиви. Дозволена лише
                         рекурсія і арифметика.</li>
@@ -41,24 +36,101 @@
                 <p class="center">if you want to see the result in the console <span>click "Ctrl+Shift+J" or
                     F12</span></p>
             </div>
+            <hr/>
+
             <div class="col-xs-12">
                 <div class="col-xs-5 justify">
-Рекурсия
+                    1.1. Написати рекурсивну функцію для обчислення факторіалу
                 </div>
                 <div class="col-xs-6 practice">
-                    ArrayObject.reverse = function () {
-                    for (let i = 0, n = this.length - 1; i < n; i++, n--) {
-                    var element = this[i];
-                    this[i] = this[n];
-                    this[n] = element;
-                    }
-                    return this;
-                    };
+
                 </div>
             </div>
+            <hr/>
+
             <div class="col-xs-12">
                 <div class="col-xs-5 justify">
+                    1.2. Написати рекурсивну функцію для обчислення степені числа
+                </div>
+                <div class="col-xs-6 practice">
+                    function stepen(x, n) {
+                    <br/>
+                    if (n != 1) {
+                    <br/>
+                    return x * stepen(x, n - 1);
+                    <br/>
+                    } else {
+                    <br/>
+                    return x; }
+                    <br/>
+                    }
+                </div>
+            </div>
+            <hr/>
 
+            <div class="col-xs-12">
+                <div class="col-xs-5 justify">
+                    1.3. Написати рекурсивну функцію для обчислення суми цифр цілого числа
+                    (наприклад, сума цифр числа 3742 буде 3+7+4+2 = 16)
+                </div>
+                <div class="col-xs-6 practice">
+
+                </div>
+            </div>
+            <hr/>
+
+            <div class="col-xs-12">
+                <div class="col-xs-5 justify">
+                    1.4. Задачі з https://learn.javascript.ru/recursion#tasks
+                </div>
+                <div class="col-xs-6 practice">
+
+                </div>
+            </div>
+            <hr/>
+
+            <div class="col-xs-12">
+                <div class="col-xs-5 justify">
+                    2.1. Написати функцію для обчислення факторіалу без рекурсії
+                </div>
+                <div class="col-xs-6 practice">
+                    function factorial(n) {
+                    <br/>
+                    var z = 1;
+                    <br/>
+                    for (i = 1; i <= n; i++) z = z * i;
+                    <br/>
+                    return (z);
+                    <br/>
+                    }
+                </div>
+            </div>
+            <hr/>
+
+            <div class="col-xs-12">
+                <div class="col-xs-5 justify">
+                    2.2. Написати функцію для обчислення степені числа без рекурсії
+                </div>
+                <div class="col-xs-6 practice">
+
+                </div>
+            </div>
+            <hr/>
+
+            <div class="col-xs-12">
+                <div class="col-xs-5 justify">
+                    2.3. Написати функцію для обчислення суми цифр цілого числа
+                    (наприклад, сума цифр числа 3742 буде 3+7+4+2 = 16) без рекурсії
+                </div>
+                <div class="col-xs-6 practice">
+
+                </div>
+            </div>
+            <hr/>
+
+            <div class="col-xs-12">
+                <div class="col-xs-5 justify">
+                    2.4. Задачі з https://learn.javascript.ru/recursion#tasks без рекурсії
                 </div>
                 <div class="col-xs-6 practice">
 

@@ -559,4 +559,24 @@ a.button:focus {
 
 .justify {
     text-align: justify;
+    padding: 10px;
+}
+
+.line {
+    margin: 15px auto;
+    padding: 1px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.7);
+    height: 1px;
+    width: 100%;
+}
+
+hr {
+    clear: both;
+    float: none;
+    width: 100%;
+    height: 1px;
+    margin: 1.4em 0;
+    border: none;
+    background: #ddd;
 }
