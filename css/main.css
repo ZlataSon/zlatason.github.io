@@ -282,6 +282,7 @@ a.button:focus {
     background: rgba(66,81,120,0.9);
     color: rgb(255, 255, 255);
     padding-top: 15px;
+    margin-top: 10px;
 }
 
 .caption {
