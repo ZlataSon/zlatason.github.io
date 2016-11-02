@@ -321,19 +321,19 @@ div.effect a.btn-round span {
     margin: 0 auto;
     max-height: 200px;
     max-width: 200px;
+    padding: 10px;
 }
 
 .box-center {
     text-align: center;
     margin: 10px auto;
-    min-width: 300px;
-    max-width: 50%;
+    width: 320px;
 }
 
 #tamagotchi {
-    padding: 25px 15px;
+    padding: 35px 15px;
     margin: 10px auto;
     border: 1px solid rgb(171, 171, 171);
-    border-radius: 15%;
+    border-radius: 50%;
     background: rgba(171, 171, 171, 0.5);
 }
