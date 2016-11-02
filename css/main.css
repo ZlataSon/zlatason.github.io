@@ -23,7 +23,7 @@ body {
     line-height: 1.5;
     color: #373a3c;
     background-color: #fff;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 2px rgb(45, 45, 45);
 }
 
 body {
@@ -32,7 +32,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-#main-body{
+#main-body {
     background: rgb(171, 171, 171) url("../img/bg_main.jpg") no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -40,7 +40,7 @@ body {
     background-size: cover;
 }
 
-#lesson1{
+#lesson1 {
     background: rgb(67, 72, 36) url("../img/bg_l1.jpg") no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -48,32 +48,32 @@ body {
     background-size: cover;
 }
 
-#lesson2{
-    background: rgb(75,122,166) url("../img/bg_l2.jpg") no-repeat fixed center center;
+#lesson2 {
+    background: rgb(75, 122, 166) url("../img/bg_l2.jpg") no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-#lesson3{
-    background: rgb(96,84,76) url("../img/bg_l3.jpg") no-repeat fixed center center;
+#lesson3 {
+    background: rgb(96, 84, 76) url("../img/bg_l3.jpg") no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-#lesson4_1{
-    background: rgb(255,209,107) url("../img/tamagotchi.jpg") no-repeat fixed center center;
+#lesson4_1 {
+    background: rgb(255, 209, 107) url("../img/tamagotchi.jpg") no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-#lesson4_2{
-    background: rgb(24,28,55) url("../img/bg_l4_2.jpg") no-repeat fixed center center;
+#lesson4_2 {
+    background: rgb(24, 28, 55) url("../img/bg_l4_2.jpg") no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -81,7 +81,7 @@ body {
 }
 
 #lesson5 {
-    background: rgb(24,28,55) url("../img/bg_l5.jpg") no-repeat fixed center center;
+    background: rgb(24, 28, 55) url("../img/bg_l5.jpg") no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -89,7 +89,7 @@ body {
 }
 
 #lesson6 {
-    background: rgb(24,28,55) url("../img/bg_l6.jpg") no-repeat fixed center center;
+    background: rgb(24, 28, 55) url("../img/bg_l6.jpg") no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -100,7 +100,7 @@ body {
     margin: 55px;
     padding: 20px;
     min-height: 200px;
-    background: rgba(66,81,120,0.9);
+    background: rgba(66, 81, 120, 0.9);
     color: rgb(255, 255, 255);
 }
 
@@ -115,7 +115,7 @@ body {
     margin: 55px;
     padding: 20px;
     min-height: 200px;
-    background: rgba(67, 72, 36,0.9);
+    background: rgba(67, 72, 36, 0.9);
     color: rgb(255, 255, 255);
 }
 
@@ -123,7 +123,7 @@ body {
     margin: 55px;
     padding: 20px;
     min-height: 200px;
-    background: rgba(75,122,166,0.9);
+    background: rgba(75, 122, 166, 0.9);
     color: rgb(255, 255, 255);
 }
 
@@ -131,7 +131,7 @@ body {
     margin: 55px;
     padding: 20px;
     min-height: 200px;
-    background: rgba(96,84,76,0.85);
+    background: rgba(96, 84, 76, 0.85);
     color: rgb(255, 255, 255);
 }
 
@@ -139,7 +139,7 @@ body {
     margin: 55px;
     padding: 20px;
     min-height: 200px;
-    background: rgba(255,209,107,0.9);;
+    background: rgba(243,162,5,0.9);
     color: rgb(255, 255, 255);
 }
 
@@ -147,7 +147,7 @@ body {
     margin: 55px;
     padding: 20px;
     min-height: 200px;
-    background: rgba(24,28,55,0.9);
+    background: rgba(72,116,143,0.8);
     color: rgb(255, 255, 255);
 }
 
@@ -245,48 +245,48 @@ a.button {
     padding: 10px 15px;
     text-decoration: none;
     font-family: Helvetica, arial, serif;
-    text-align:center;
-    font-size:24px;
+    text-align: center;
+    font-size: 24px;
     cursor: pointer;
-    border: 1px solid rgba(0,0,0,0.5);
-    border-bottom: 3px solid rgba(0,0,0,0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
     border-radius: 7px;
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.5), /* Exterior Shadow */
-    inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
-    inset 0 10px rgba(255,255,255,0.2), /* Top Light Shadow */
-    inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
-    inset 0 -15px 30px rgba(0,0,0,0.3); /* Dark Background */
-    -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.5),
-    inset 0 1px rgba(255,255,255,0.3),
-    inset 0 10px rgba(255,255,255,0.2),
-    inset 0 10px 20px rgba(255,255,255,0.25),
-    inset 0 -15px 30px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.5),
-    inset 0 1px rgba(255,255,255,0.3),
-    inset 0 10px rgba(255,255,255,0.2),
-    inset 0 10px 20px rgba(255,255,255,0.25),
-    inset 0 -15px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5),       /* Exterior Shadow */
+    inset 0 1px rgba(255, 255, 255, 0.3),           /* Top light Line */
+    inset 0 10px rgba(255, 255, 255, 0.2),          /* Top Light Shadow */
+    inset 0 10px 20px rgba(255, 255, 255, 0.25),    /* Sides Light Shadow */
+    inset 0 -15px 30px rgba(0, 0, 0, 0.3);          /* Dark Background */
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5),
+    inset 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 10px rgba(255, 255, 255, 0.2),
+    inset 0 10px 20px rgba(255, 255, 255, 0.25),
+    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5),
+    inset 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 10px rgba(255, 255, 255, 0.2),
+    inset 0 10px 20px rgba(255, 255, 255, 0.25),
+    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
 }
 
 a.button:hover,
 a.button:focus {
     opacity: 0.8;
     filter: alpha(opacity=80);
-    -moz-opacity:0.8;
+    -moz-opacity: 0.8;
     -khtml-opacity: 0.8;
 }
 
 .effect {
-    background: rgba(66,81,120,0.9);
+    background: rgba(66, 81, 120, 0.9);
     color: rgb(255, 255, 255);
     padding-top: 15px;
     margin-top: 10px;
 }
 
 .caption {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
     color: #fff;
@@ -315,4 +315,25 @@ div.effect a.btn-round span {
     top: 60px;
     right: 15%;
     left: 15%;
+}
+
+.box-center img {
+    margin: 0 auto;
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.box-center {
+    text-align: center;
+    margin: 10px auto;
+    min-width: 300px;
+    max-width: 50%;
+}
+
+#tamagotchi {
+    padding: 25px 15px;
+    margin: 10px auto;
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 15%;
+    background: rgba(171, 171, 171, 0.5);
 }
