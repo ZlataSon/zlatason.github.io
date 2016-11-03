@@ -160,7 +160,6 @@ var greenTamagotchi = new Tamagotchi("Tommy", 3, 3, 3, 3, 3, 3);
 console.log(greenTamagotchi);
 
 
-
 greenTamagotchi.walk();
 greenTamagotchi.rain();
 greenTamagotchi.eat();
@@ -181,7 +180,3 @@ greenTamagotchi.sleep();
 greenTamagotchi.eat_sweets();
 greenTamagotchi.tv();
 greenTamagotchi.accident();
-
-
-
-

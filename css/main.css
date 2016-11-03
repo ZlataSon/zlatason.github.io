@@ -65,7 +65,7 @@ body {
 }
 
 #lesson4_1 {
-    background: rgb(255, 209, 107) url("../img/tamagotchi.jpg") no-repeat fixed center center;
+    background: rgb(243,162,5) url("../img/bg_tamagotchi.jpg") no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -73,7 +73,7 @@ body {
 }
 
 #lesson4_2 {
-    background: rgb(24, 28, 55) url("../img/bg_l4_2.jpg") no-repeat fixed center center;
+    background: rgb(123,133,8) url("../img/bg_l4.jpg") no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -147,7 +147,7 @@ body {
     margin: 55px;
     padding: 20px;
     min-height: 200px;
-    background: rgba(72,116,143,0.8);
+    background: rgba(123,133,8,0.8);
     color: rgb(255, 255, 255);
 }
 
@@ -264,9 +264,9 @@ a.button {
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-bottom: 3px solid rgba(0, 0, 0, 0.5);
-    border-radius: 7px;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5),       /* Exterior Shadow */
     inset 0 1px rgba(255, 255, 255, 0.3),           /* Top light Line */
     inset 0 10px rgba(255, 255, 255, 0.2),          /* Top Light Shadow */
