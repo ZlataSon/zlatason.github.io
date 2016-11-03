@@ -151,6 +151,20 @@ body {
     color: rgb(255, 255, 255);
 }
 
+h1.logo {
+    font-family: 'Shrikhand', cursive;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 1.2px;
+    font-weight: 300;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    vertical-align: bottom;
+}
+
 h3 {
     font-size: 24px;
     text-align: center;
