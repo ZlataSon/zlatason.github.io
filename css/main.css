@@ -96,6 +96,22 @@ body {
     background-size: cover;
 }
 
+#lesson7 {
+    background: rgb(24, 28, 55) url("../img/bg_l6.jpg") no-repeat fixed center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#lesson8 {
+    background: rgb(72, 116, 143) url("../img/bg_l6.jpg") no-repeat fixed center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 #main-body .wrapper1 {
     margin: 55px;
     padding: 20px;
@@ -148,6 +164,38 @@ body {
     padding: 20px;
     min-height: 200px;
     background: rgba(123,133,8,0.8);
+    color: rgb(255, 255, 255);
+}
+
+#lesson5 .wrapper {
+    margin: 55px;
+    padding: 20px;
+    min-height: 200px;
+    background: rgba(243,162,5,0.9);
+    color: rgb(255, 255, 255);
+}
+
+#lesson6 .wrapper {
+    margin: 55px;
+    padding: 20px;
+    min-height: 200px;
+    background: rgba(123,133,8,0.8);
+    color: rgb(255, 255, 255);
+}
+
+#lesson7 .wrapper {
+    margin: 55px;
+    padding: 20px;
+    min-height: 200px;
+    background: rgba(243,162,5,0.9);
+    color: rgb(255, 255, 255);
+}
+
+#lesson8 .wrapper {
+    margin: 55px;
+    padding: 20px;
+    min-height: 200px;
+    background: rgba(72, 116, 143, 0.8);
     color: rgb(255, 255, 255);
 }
 
@@ -367,5 +415,3 @@ div.effect a.btn-round span {
     font-size: 22px;
     line-height: 1.2;
 }
-
-

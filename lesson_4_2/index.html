@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+
+    <link rel="stylesheet" href="lib/mocha.css">
+    <script src="lib/mocha.js"></script>
+    <script src="lib/chai.js"></script>
+    <script defer src="testFactory.js"></script>
 </head>
 
 <body id="lesson4_2">
@@ -20,7 +25,7 @@
             <h1 class="logo"><img src="../img/icon.png" alt="logo"/>Marina S.</h1>
             <hr/>
             <h3>Lesson 4/2</h3>
-            <h5>"JS"</h5>
+            <h5>"JS - Test Algorithm Kit"</h5>
             <div class="center">
                 <a class="button" href="../index.html">Main page</a>
                 <a class="button" href="https://github.com/ZlataSon/zlatason.github.io/tree/master/lesson_4_2">My GitHub</a>
@@ -33,9 +38,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <ul>Home work Lesson 4:
-                        <li>Прості задачки для розминки. Ось тут є задачки одразу з тестами: https://github.com/Dubiy/gh-js-tasks
-                            Завантажте собі, і напишіть такі функції, щоб успішно проходили тести.
-                            Завдання в каталозі task/
+                        <li>Test Algorithm Kit. Прості задачки для розминки. Напишіть такі функції до завантажених задач, щоб успішно проходили тести.
                         </li>
                     </ul>
                     <p class="center">if you want to see the result in the console <span>click "Ctrl+Shift+J" or
@@ -43,12 +46,35 @@
                 </div>
                 <hr/>
 
+                <div class="col-xs-12">
 
+                    <div id="mocha"></div>
+
+                    <script>
+                        mocha.setup('bdd');
+                        var assert = chai.assert;
+                        var tasks = [];
+                    </script>
+
+                    <script src="task/task0.js"></script>
+                    <script src="task/task1.js"></script>
+                    <script src="task/task2.js"></script>
+                    <script src="task/task3.js"></script>
+                    <script src="task/task4.js"></script>
+                    <script src="task/task5.js"></script>
+                    <script src="task/task6.js"></script>
+                    <script src="task/task7.js"></script>
+                    <script src="task/task8.js"></script>
+                    <script src="task/task9.js"></script>
+                    <script src="task/task10.js"></script>
+                    <script src="task/task11.js"></script>
+                    <script src="task/task12.js"></script>
+                    <script src="task/task13.js"></script>
+                    <script src="task/taskHard.js"></script>
+
+                </div>
             </div>
         </div>
     </div>
 </body>
-
-<script src="js/lesson4_2.js"></script>
-
 </html>

@@ -143,6 +143,9 @@ console.log(sumTo(100));
 //Task  2.5. Числа Фібоначчі без рекурсії
 
 function fibonacci(n) {
+    if (n == 0 || n == 1) {
+        return n;
+    }
     var a = 1;
     var b = 1;
     for (var i = 3; i <= n; i++) {
