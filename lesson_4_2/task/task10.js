@@ -44,7 +44,10 @@ var capsLockTests = [
 
 
 function capsLock(str) {
-    //TODO
+    var len = str.length;
+    if (len > 0 && len >= 100) {
+
+    }
 }
 
 

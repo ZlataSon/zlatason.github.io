@@ -55,7 +55,21 @@ var luckyNumberTests = [
 
 
 function luckyNumber(number) {
-    //TODO
+    if (1 <= number.length && number.length <= 1018) {
+        number = number.replace(/[^47]/g, '');
+        var len = number.length.toString();
+        if (/[^47]/.test(len)) {
+            return false;
+        }
+        else {
+            return true;
+        }
+
+    }
+
+    else {
+        return false;
+    }
 }
 
 
