@@ -29,9 +29,17 @@ var dragonCountTests = [
     }
 ];
 
-
 function dragonCount(k, l, m, n, d) {
-    //TODO
+    if (k >= 1 && l >= 1 && m >= 1 && n >= 1 && d >= 1 &&
+        k <= 10 && l <= 10 && m <= 10 && n <= 10 && d <= 105) {
+        var dracon = 0;
+        for (var i = 1; i <= d; i++) {
+            if (i % k == 0 || i % l == 0 || i % m == 0 || i % n == 0) {
+                dracon++;
+            }
+        }
+        return dracon;
+    }
 }
 
 

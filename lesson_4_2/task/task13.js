@@ -28,11 +28,18 @@ var chatTest = [
     }
 ];
 
-
 function chat(s) {
-    //TODO
+    var word = 'hello',
+        result = 0,
+        index = 0;
+    for (var i = 0; i < s.length; i++) {
+        if (s[i] == word[index]) {
+            index++;
+            result++;
+        }
+    }
+    return (result == 5).toString();
 }
-
 
 tasks.push({
     title: "Чат",
