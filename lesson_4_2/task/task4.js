@@ -38,7 +38,18 @@ var stringDotTests = [
 
 
 function stringDot(word) {
-    //TODO
+    var wordCase = word.toLowerCase();
+
+    var reg = new RegExp('[aoyeui]', "g");
+    wordCase = wordCase.replace(reg,'');
+
+    var wordNew = wordCase.split("");
+
+    var result = "";
+    for (var i = 0; i < wordNew.length; i++) {
+        result += "." + wordNew[i];
+    }
+    return result;
 }
 
 
