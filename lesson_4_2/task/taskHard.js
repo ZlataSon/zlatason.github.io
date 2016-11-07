@@ -61,6 +61,9 @@ var drazilTest = [
 
 
 function drazil(boys, girls) {
+    if (boys.length < 1 && boys.length > 15) {
+        return NaN;
+    }
     var array = ["0", "0", "2", "3", "322", "5", "53", "7", "7222", "7332"];
     var result = "";
     for (var i = 0; i < boys.length; i++) {
