@@ -68,7 +68,37 @@ var registrationTests = [
 
 
 function registration(names) {
-    //TODO
+    var regNames = [];
+    for (var i = 0; i < names.length; i++) {
+        var ind = 0;
+        var name = names[i];
+        do {
+            var find = false;
+            for (var n = 0; n < regNames.length; n++) {
+                if (name == regNames[n]) {
+                    find = true;
+                    break;
+                }
+            }
+            if (find) {
+                ind++;
+                name = names[i] + ind;
+            }
+        } while (find);
+        regNames.push(name)
+    }
+
+    var answer = [];
+    for (i = 0; i < names.length; i++) {
+        if (names[i]==regNames[i]) {
+            answer.push('OK');
+        }
+        else {
+            answer.push(regNames[i]);
+        }
+    }
+
+    return answer;
 }
 
 
