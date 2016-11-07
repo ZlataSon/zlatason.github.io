@@ -90,7 +90,7 @@ function registration(names) {
 
     var answer = [];
     for (i = 0; i < names.length; i++) {
-        if (names[i]==regNames[i]) {
+        if (names[i] == regNames[i]) {
             answer.push('OK');
         }
         else {
