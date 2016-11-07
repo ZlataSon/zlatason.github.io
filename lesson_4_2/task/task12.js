@@ -51,11 +51,18 @@ var fastMathTest = [
     }
 ];
 
-
 function fastMath(a, b) {
-    //TODO
+    var result = "";
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] != b[i]) {
+            result += "1";
+        }
+        else {
+            result += "0";
+        }
+    }
+    return result;
 }
-
 
 tasks.push({
     title: "Быстрый математик",

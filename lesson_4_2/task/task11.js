@@ -31,7 +31,22 @@ var firstStepsTests = [
 
 
 function firstSteps(arr) {
-    //TODO
+    var maxLen = 0;
+    for (var i = 0; i < arr.length; i++) {
+        var len = 1;
+        for (var n = i + 1; n < arr.length; n++) {
+            if (arr[n-1] <= arr[n]) {
+                len++;
+            }
+            else {
+                break;
+            }
+        }
+        if (maxLen < len) {
+            maxLen = len;
+        }
+    }
+    return maxLen;
 }
 
 
