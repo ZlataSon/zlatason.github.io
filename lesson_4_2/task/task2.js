@@ -46,7 +46,7 @@ function factorial(n) {
 }
 
 tasks.push({
-    title: "Факториал",
+    title: "Факториал числа n. Факториал от 0 будет 1. Факториал отрицательного числа не существует(NaN). Используйте рекурсию для решения.",
     solution: factorial,
     tests: factorialTests
 });

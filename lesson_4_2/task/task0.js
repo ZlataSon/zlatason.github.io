@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Найти суму 2 чител. a + b
+ * Найти суму 2 чисел. a + b
  */
 
 var sumTests = [
@@ -26,7 +26,7 @@ function sum(a, b) {
 
 
 tasks.push({
-    title: "a + b",
+    title: "Пример решения задач. Найти суму чисел a + b",
     solution: sum,
     tests: sumTests
 });

@@ -213,6 +213,12 @@ h1.logo {
     vertical-align: bottom;
 }
 
+.geekhub img {
+    height: 29px;
+    vertical-align: bottom;
+    margin-left: 5px;
+}
+
 h3 {
     font-size: 24px;
     text-align: center;
