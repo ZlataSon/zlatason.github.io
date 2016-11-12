@@ -33,6 +33,11 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 /*Background*/
 
 #main-body {
@@ -219,6 +224,7 @@ h1.logo {
 }
 
 .geekhub img {
+    width: auto;
     height: 29px;
     vertical-align: bottom;
     margin-left: 5px;
@@ -226,8 +232,18 @@ h1.logo {
 
 /*Text style*/
 
-h3 {
+h2 {
     font-size: 24px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 22px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
     text-align: center;
 }
 
@@ -545,4 +561,25 @@ span.done {
 
 #alert {
     padding: 10px 25px 0;
+}
+
+#tint {
+    padding: 25px 20px;
+    margin: 10px auto;
+    width: 85%;
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 5px;
+    background: rgba(34, 125, 171, 0.5);
+}
+
+#tint .water:nth-child(even) {
+    color: #0b97c4;
+    font-size: 50px;
+    margin: 25px;
+}
+
+#tint .water:nth-child(odd) {
+    color: #0010c4;
+    font-size: 65px;
+    margin: 20px;
 }

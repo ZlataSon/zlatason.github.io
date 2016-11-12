@@ -1,4 +1,5 @@
 // TASK 1. TodoList
+console.log("***TASK 1. TodoList***");
 
 var status = "Add",
     el = null;
@@ -73,4 +74,44 @@ function checked() {
     }
 }
 
-// TASK 2. Algoritm water
+// TASK 2. Water algorithm
+console.log("***TASK 2. Water algorithm***");
+
+function findWater(arr, n) {
+    var water = 0,
+        left = [],
+        right = [];
+
+    left[0] = arr[0];
+    for (var i = 1; i < n; i++)
+        left[i] = Math.max(left[i - 1], arr[i]);
+
+    right[n - 1] = arr[n - 1];
+    for (var z = n - 2; z >= 0; z--)
+        right[z] = Math.max(right[z + 1], arr[z]);
+
+    for (var v = 0; v < n; v++)
+        water += Math.min(left[v], right[v]) - arr[v];
+
+    console.log(left, right);
+    console.log(arr);
+
+    return water;
+}
+
+var rockHeight = [2, 1, 5, 0, 3, 4, 7, 2, 3, 1, 0];
+var n = rockHeight.length;
+console.log("Maximum water that can be accumulated is " + findWater(rockHeight, n));
+document.getElementById("water").innerHTML = findWater(rockHeight, n);
+
+var magic = findWater(rockHeight, n);
+for (var d = 1; d <= magic; d++) {
+    var i = document.createElement("i");
+    i.className = "fa fa-tint water";
+    i.innerText = " ";
+    document.getElementById("tint").appendChild(i);
+}
+
+
+
+
