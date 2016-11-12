@@ -1,3 +1,5 @@
+/*Main style*/
+
 html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -28,9 +30,10 @@ body {
 
 body {
     font-size: 16px;
-    line-height: 1.5;
     font-family: 'Lato', sans-serif;
 }
+
+/*Background*/
 
 #main-body {
     background: rgb(171, 171, 171) url("../img/bg_main.jpg") no-repeat fixed center center;
@@ -199,6 +202,8 @@ body {
     color: rgb(255, 255, 255);
 }
 
+/*Logo style*/
+
 h1.logo {
     font-family: 'Shrikhand', cursive;
     font-size: 24px;
@@ -218,6 +223,8 @@ h1.logo {
     vertical-align: bottom;
     margin-left: 5px;
 }
+
+/*Text style*/
 
 h3 {
     font-size: 24px;
@@ -274,6 +281,17 @@ span {
     padding: 0 5px;
 }
 
+.center {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+    padding: 10px 15px;
+}
+
+/*Block style, btn*/
+
 .method div,
 div.practice {
     padding: 10px 15px;
@@ -284,15 +302,6 @@ div.practice {
     font-size: 12px;
     margin: 0.5em 0 1em 0;
     letter-spacing: 1.5px;
-}
-
-.center {
-    text-align: center;
-}
-
-.justify {
-    text-align: justify;
-    padding: 10px 15px;
 }
 
 hr {
@@ -345,6 +354,8 @@ a.button:focus {
     -moz-opacity: 0.8;
     -khtml-opacity: 0.8;
 }
+
+/*Lesson 4 style, tamagotchi ...*/
 
 .effect {
     background: rgba(66, 81, 120, 0.9);
@@ -420,4 +431,118 @@ div.effect a.btn-round span {
 .click .fa {
     font-size: 22px;
     line-height: 1.2;
+}
+
+/*Lesson 5 style, TodoList ...*/
+
+.todo-header input {
+    background-color: rgba(247, 246, 246, 0.78);
+    border: 2px solid #72E3FC;
+    border-radius: 15px;
+    height: 34px;
+    width: 85%;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+    padding: 0 40px 0 10px;
+}
+.todo-header input:focus {
+    outline: none;
+}
+.todo-header {
+    color:#72E3FC;
+    font-size:35px;
+    width:100%;
+    padding: 10px 0;
+}
+
+.todo-header .add-btn,
+.todo-header .remove-btn {
+    -webkit-appearance: button;
+    cursor: pointer;
+    height: 34px;
+    margin-left: -40px;
+    background-color:#6BE4FF;
+    border:none;
+    border-radius: 15px;
+    color:#858585;
+    font-size:14px;
+}
+
+.todo-header .remove-btn {
+    margin: 0;
+    padding: 5px 13px;
+}
+
+.todo-header .add-btn:hover,
+.todo-header .remove-btn:hover,
+span.todo {
+    background-color:#58D2ED;
+}
+
+#todo {
+    margin: 0;
+    padding: 0;
+}
+
+#todo li {
+    font-size: 16px;
+    margin: 0;
+    padding: 5px 85px 5px 20px;
+    position: relative;
+}
+
+#todo li::before {
+    content: '✓';
+    font-size: 16px;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    color: #6BE4FF;
+    font-weight: bold;
+}
+
+#todo li.edit::after {
+    content: 'change';
+    font-size: 16px;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    color: #6BE4FF;
+    font-weight: bold;
+}
+
+span.done {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    text-align: right;
+    display: block;
+    background: #6BE4FF;
+    width: auto;
+    height: 24px;
+    margin: 5px 0;
+    border: 1px solid #72E3FC;
+    border-radius: 15px;
+    line-height: 1.5;
+    text-shadow: none;
+    cursor: pointer;
+    color: #858585;
+    font-size: 14px;
+}
+
+#todo li.checkedNot {
+    background: transparent;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#todo li.checked {
+    background: rgba(45, 34, 34, 0.2);
+    color: #fff;
+    text-decoration: line-through;
+}
+
+#alert {
+    padding: 10px 25px 0;
 }
