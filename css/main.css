@@ -38,6 +38,208 @@ img {
     height: auto;
 }
 
+/*Animate loader*/
+
+.cssload-loader {
+    /*background: rgba(33, 34, 39, 0.7);*/
+    /*background: rgba(255, 255, 255, 0.3);*/
+    position: relative;
+    /* left: calc(50% - 31px); */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    margin: 5px auto;
+    perspective: 780px;
+}
+
+.cssload-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.cssload-inner.cssload-one {
+     left: 0%;
+     top: 0%;
+     animation: cssload-rotate-one 1.15s linear infinite;
+     -o-animation: cssload-rotate-one 1.15s linear infinite;
+     -ms-animation: cssload-rotate-one 1.15s linear infinite;
+     -webkit-animation: cssload-rotate-one 1.15s linear infinite;
+     -moz-animation: cssload-rotate-one 1.15s linear infinite;
+     border-bottom: 4px solid rgba(5, 8, 243, 0.99);
+}
+
+.cssload-inner.cssload-two {
+     right: 0%;
+     top: 0%;
+     animation: cssload-rotate-two 1.15s linear infinite;
+     -o-animation: cssload-rotate-two 1.15s linear infinite;
+     -ms-animation: cssload-rotate-two 1.15s linear infinite;
+     -webkit-animation: cssload-rotate-two 1.15s linear infinite;
+     -moz-animation: cssload-rotate-two 1.15s linear infinite;
+     border-right: 4px solid rgba(40, 255, 1, 0.99);
+}
+
+.cssload-inner.cssload-three {
+     right: 0%;
+     bottom: 0%;
+     animation: cssload-rotate-three 1.15s linear infinite;
+     -o-animation: cssload-rotate-three 1.15s linear infinite;
+     -ms-animation: cssload-rotate-three 1.15s linear infinite;
+     -webkit-animation: cssload-rotate-three 1.15s linear infinite;
+     -moz-animation: cssload-rotate-three 1.15s linear infinite;
+     border-top: 4px solid rgba(239, 19, 4, 0.99);
+}
+
+@keyframes cssload-rotate-one {
+    0% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@-o-keyframes cssload-rotate-one {
+    0% {
+        -o-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        -o-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@-ms-keyframes cssload-rotate-one {
+    0% {
+        -ms-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        -ms-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@-webkit-keyframes cssload-rotate-one {
+    0% {
+        -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@-moz-keyframes cssload-rotate-one {
+    0% {
+        -moz-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        -moz-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@keyframes cssload-rotate-two {
+    0% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@-o-keyframes cssload-rotate-two {
+    0% {
+        -o-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        -o-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@-ms-keyframes cssload-rotate-two {
+    0% {
+        -ms-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        -ms-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@-webkit-keyframes cssload-rotate-two {
+    0% {
+        -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@-moz-keyframes cssload-rotate-two {
+    0% {
+        -moz-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        -moz-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes cssload-rotate-three {
+    0% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+@-o-keyframes cssload-rotate-three {
+    0% {
+        -o-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        -o-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+@-ms-keyframes cssload-rotate-three {
+    0% {
+        -ms-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        -ms-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+@-webkit-keyframes cssload-rotate-three {
+    0% {
+        -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+@-moz-keyframes cssload-rotate-three {
+    0% {
+        -moz-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        -moz-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
 /*Background*/
 
 #main-body {
@@ -97,7 +299,7 @@ img {
 }
 
 #lesson6 {
-    background: rgb(24, 28, 55) url("../img/bg_l6.jpg") no-repeat fixed center center;
+    background: rgba(131,61,137,0.8) url("../img/bg_l6.jpg") no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -187,7 +389,7 @@ img {
     margin: 55px;
     padding: 20px;
     min-height: 200px;
-    background: rgba(123,133,8,0.8);
+    background: rgba(131,61,137,0.8);
     color: rgb(255, 255, 255);
 }
 
@@ -215,6 +417,8 @@ h1.logo {
     text-align: center;
     letter-spacing: 1.2px;
     font-weight: 300;
+    padding: 40% 0;
+    margin: 0;
 }
 
 .logo img {
@@ -235,6 +439,10 @@ h1.logo {
 h2 {
     font-size: 24px;
     text-align: center;
+}
+
+#mocha h2 {
+    text-align: left;
 }
 
 h3 {
@@ -308,6 +516,38 @@ span {
 
 /*Block style, btn*/
 
+.effect {
+    background: rgba(66, 81, 120, 0.9);
+    color: rgb(255, 255, 255);
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+div.effect a.btn-round {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 5px auto;
+    font-size: 17px;
+}
+
+div.effect a.btn-round span {
+    position: absolute;
+    top: 70px;
+    right: 15%;
+    left: 15%;
+}
+
+div.effect a.btn-round i {
+    position: absolute;
+    top: -25px;
+    right: 40px;
+}
+
 .method div,
 div.practice {
     padding: 10px 15px;
@@ -373,12 +613,6 @@ a.button:focus {
 
 /*Lesson 4 style, tamagotchi ...*/
 
-.effect {
-    background: rgba(66, 81, 120, 0.9);
-    color: rgb(255, 255, 255);
-    padding-top: 15px;
-    margin-top: 10px;
-}
 
 .caption {
     background: rgba(0, 0, 0, 0.7);
@@ -391,25 +625,6 @@ a.button:focus {
     text-align: center;
     font-style: italic;
     padding: 15px 10px;
-}
-
-div.effect a.btn-round {
-    position: relative;
-    display: block;
-    text-align: center;
-    width: 150px;
-    height: 150px;
-    color: rgb(255, 255, 255);
-    border-radius: 50%;
-    margin: 5px auto;
-    font-size: 17px;
-}
-
-div.effect a.btn-round span {
-    position: absolute;
-    top: 60px;
-    right: 15%;
-    left: 15%;
 }
 
 .box-center img {
