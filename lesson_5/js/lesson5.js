@@ -64,13 +64,27 @@ function checked() {
         this.innerText = "Not done";
         this.parentElement.className = "checkedNot";
         this.parentElement.onclick = click;
-
     }
     else {
         this.innerText = "Done";
         this.parentElement.className = "checked";
         this.parentElement.onclick = null;
+    }
+}
 
+function archive() {
+    var items = document.getElementsByClassName("checked");
+    for (var item of items) {
+        console.dir(item);
+        var text = "";
+        text = item.firstChild.textContent;
+        var li = document.createElement("li");
+        var t = document.createTextNode(text);
+        li.appendChild(t);
+        var ul = document.getElementById("archive-list");
+        ul.appendChild(li);
+        var ulOther = document.getElementById("todo");
+        ulOther.removeChild(item);
     }
 }
 

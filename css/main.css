@@ -56,6 +56,11 @@ img {
     perspective: 780px;
 }
 
+.effect .cssload-loader {
+    width: 150px;
+    height: 150px;
+}
+
 .cssload-inner {
     position: absolute;
     width: 100%;
@@ -83,6 +88,11 @@ img {
      border-bottom: 4px solid rgba(5, 8, 243, 0.99);
 }
 
+.effect .cssload-inner.cssload-one {
+    border-top: 2px solid rgba(255, 255, 255, 0.99);
+    border-bottom: none;
+}
+
 .cssload-inner.cssload-two {
      right: 0%;
      top: 0%;
@@ -94,6 +104,11 @@ img {
      border-right: 4px solid rgba(40, 255, 1, 0.99);
 }
 
+.effect .cssload-inner.cssload-two {
+    border-top: 2px solid rgba(255, 255, 255, 0.99);
+    border-right: none;
+}
+
 .cssload-inner.cssload-three {
      right: 0%;
      bottom: 0%;
@@ -103,6 +118,10 @@ img {
      -webkit-animation: cssload-rotate-three 1.15s linear infinite;
      -moz-animation: cssload-rotate-three 1.15s linear infinite;
      border-top: 4px solid rgba(239, 19, 4, 0.99);
+}
+
+.effect .cssload-inner.cssload-three {
+    border-top: 2px solid rgba(255, 255, 255, 0.99);
 }
 
 @keyframes cssload-rotate-one {
@@ -688,7 +707,8 @@ a.button:focus {
 }
 
 .todo-header .add-btn,
-.todo-header .remove-btn {
+.todo-header .remove-btn,
+#btn-archive {
     -webkit-appearance: button;
     cursor: pointer;
     height: 34px;
@@ -700,14 +720,16 @@ a.button:focus {
     font-size:14px;
 }
 
-.todo-header .remove-btn {
+.todo-header .remove-btn,
+#btn-archive {
     margin: 0;
     padding: 5px 13px;
 }
 
 .todo-header .add-btn:hover,
 .todo-header .remove-btn:hover,
-span.todo {
+span.todo,
+#btn-archive {
     background-color:#58D2ED;
 }
 
@@ -797,4 +819,27 @@ span.done {
     color: #0010c4;
     font-size: 65px;
     margin: 20px;
+}
+
+#archive-list {
+    margin: 5px 5px 5px 70px;
+    padding: 5px;
+}
+
+#archive-list li {
+    color: rgb(226, 212, 203);
+    font-size: 16px;
+    padding: 3px;
+    line-height: 1;
+    text-align: right;
+}
+
+#archive-list li::after {
+    content: '✓';
+    font-size: 16px;
+    display: block;
+    float: right;
+    margin-left: 5px;
+    color: #f34754;
+    font-weight: bold;
 }
