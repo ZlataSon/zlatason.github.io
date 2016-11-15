@@ -83,9 +83,12 @@ function archive() {
         li.appendChild(t);
         var ul = document.getElementById("archive-list");
         ul.appendChild(li);
-        var ulOther = document.getElementById("todo");
-        ulOther.removeChild(item);
     }
+    for (var i = items.length - 1; i >= 0; i--) {
+        var ulOther = document.getElementById("todo");
+        ulOther.removeChild(items[i]);
+    }
+
 }
 
 // TASK 2. Water algorithm
