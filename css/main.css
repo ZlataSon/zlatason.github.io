@@ -838,7 +838,11 @@ span.done {
 }
 
 .maket-header {
-    background: rgb(148, 235, 34);
+    background: rgb(146, 193, 4);
+    background: -webkit-linear-gradient(rgb(70, 93, 2), rgb(146, 193, 4));
+    background: -o-linear-gradient(rgb(70, 93, 2), rgb(146, 193, 4));
+    background: -moz-linear-gradient(rgb(70, 93, 2), rgb(146, 193, 4));
+    background: linear-gradient(rgb(70, 93, 2), rgb(146, 193, 4));
 }
 
 #maket h2 {
@@ -1005,3 +1009,17 @@ span.done {
 .maket-footer {
     padding: 30px;
 }
+
+@media (max-width: 798px) {
+    .maket-menu li,
+    #maket .maket-welcome .block,
+    #maket .block {
+        width: 100%;
+    }
+    .maket-menu li:after {
+        content: "";
+        margin: 0 auto;
+        padding: 5px 0;
+    }
+}
+
