@@ -26,6 +26,7 @@ body {
     color: #373a3c;
     background-color: #fff;
     text-shadow: 1px 1px 2px rgb(45, 45, 45);
+
 }
 
 body {
@@ -309,32 +310,8 @@ img {
     background-size: cover;
 }
 
-#lesson5 {
+#lesson5-6 {
     background: rgba(5,147,150,0.8) url("../img/bg_l5.jpg") no-repeat fixed center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#lesson6 {
-    background: rgba(131,61,137,0.8) url("../img/bg_l6.jpg") no-repeat fixed center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#lesson7 {
-    background: rgb(24, 28, 55) url("../img/bg_l6.jpg") no-repeat fixed center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#lesson8 {
-    background: rgb(72, 116, 143) url("../img/bg_l6.jpg") no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -396,35 +373,21 @@ img {
     color: rgb(255, 255, 255);
 }
 
-#lesson5 .wrapper {
-    margin: 55px;
+#lesson5-6 {
+    overflow: hidden;
+}
+
+#maket {
+    background: rgba(255, 255, 255, 1);
+    text-shadow: none;
+    box-shadow: none;
+}
+
+#lesson5-6 .wrapper {
+    margin: 50px;
     padding: 20px;
-    min-height: 200px;
+    min-height: 100px;
     background: rgba(5,147,150,0.85);
-    color: rgb(255, 255, 255);
-}
-
-#lesson6 .wrapper {
-    margin: 55px;
-    padding: 20px;
-    min-height: 200px;
-    background: rgba(131,61,137,0.8);
-    color: rgb(255, 255, 255);
-}
-
-#lesson7 .wrapper {
-    margin: 55px;
-    padding: 20px;
-    min-height: 200px;
-    background: rgba(243,162,5,0.9);
-    color: rgb(255, 255, 255);
-}
-
-#lesson8 .wrapper {
-    margin: 55px;
-    padding: 20px;
-    min-height: 200px;
-    background: rgba(72, 116, 143, 0.8);
     color: rgb(255, 255, 255);
 }
 
@@ -708,7 +671,8 @@ a.button:focus {
 
 .todo-header .add-btn,
 .todo-header .remove-btn,
-#btn-archive {
+#btn-archive,
+.sort-btn {
     -webkit-appearance: button;
     cursor: pointer;
     height: 34px;
@@ -721,16 +685,25 @@ a.button:focus {
 }
 
 .todo-header .remove-btn,
-#btn-archive {
+#btn-archive,
+.sort-btn {
     margin: 0;
     padding: 5px 13px;
 }
 
 .todo-header .add-btn:hover,
 .todo-header .remove-btn:hover,
-span.todo,
-#btn-archive {
+#todo span:hover,
+#btn-archive:hover,
+.sort-btn:hover {
     background-color:#58D2ED;
+}
+
+#todo span,
+#btn-archive,
+.sort-btn {
+    min-width: 85px;
+    text-align: center;
 }
 
 #todo {
@@ -842,4 +815,193 @@ span.done {
     margin-left: 5px;
     color: #f34754;
     font-weight: bold;
+}
+
+/*Lesson 5-6 task 3 maket*/
+
+#maket .container-fluid {
+    max-width: 1200px;
+}
+
+.img-maket img {
+    width: 50%;
+    height: auto;
+}
+
+.maket-menu::after,
+.maket-welcome::after,
+.maket-text-block::after,
+.small-block::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.maket-header {
+    background: rgb(148, 235, 34);
+}
+
+#maket h2 {
+    font-size: 36px;
+    text-align: left;
+    font-weight: 100;
+    margin: 0;
+    padding: 30px;
+    color: rgb(0, 0, 0);
+}
+
+#maket h2 span {
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+#maket h3 {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 15px;
+    margin: 5px 0;
+}
+
+.maket-menu li a {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+#maket p:first-line {
+    color: rgb(90, 197, 50);
+}
+
+#maket p + p:first-line {
+    color: rgb(0, 0, 0);
+}
+
+#maket p {
+    margin-left: 15px;
+}
+
+#maket p, #maket a {
+    color: rgb(0, 0, 0);
+}
+
+#maket .maket-title a,
+#maket .maket-title a span {
+    color: rgb(255, 255, 255);
+}
+
+.maket-title a:hover,
+.maket-title a:focus {
+    color: rgb(27, 255, 6);
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+#maket a:hover,
+#maket a:focus {
+    color: rgb(90, 197, 50);
+}
+
+.maket-menu {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+.maket-menu li {
+    float: left;
+    width: 20%;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.maket-menu li:after {
+    content: "∴";
+    font-size: 24px;
+    display: block;
+    float: right;
+    margin: 0 auto;
+    padding: 0;
+    font-weight: bold;
+}
+
+.maket-menu li:last-child:after {
+    content: none;
+}
+
+.maket-menu li a:hover,
+.maket-menu li a:focus {
+    color: rgb(90, 197, 50);
+}
+
+.maket-welcome {
+    background: rgb(238, 240, 252);
+    padding: 30px;
+}
+
+#maket .maket-welcome .block {
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding: 15px 0;
+    text-align: left;
+}
+
+#maket .maket-welcome .block h2 {
+    margin-left: -7%;
+}
+
+.maket-text-block .block:first-child,
+.small-block .block:first-child{
+    float: left;
+    width: 40%;
+    margin: 0;
+    padding: 15px;
+    text-align: left;
+    position: relative;
+}
+
+.maket-text-block > .block:first-child:after{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    border-right: 2px solid rgb(238, 240, 252);
+}
+
+.maket-text-block .block:last-child,
+.small-block .block:last-child {
+    float: left;
+    width: 60%;
+    margin: 0;
+    padding: 15px;
+    text-align: left;
+}
+
+.block hr {
+    clear: both;
+    float: none;
+    width: 95%;
+    height: 2px;
+    margin: 0.7em auto;
+    border: none;
+    background: rgb(238, 240, 252);
+}
+
+.line {
+    clear: both;
+    float: none;
+    width: 100%;
+    height: 15px;
+    margin: 0.7em auto;
+    border: none;
+    background: rgb(238, 240, 252);
+}
+
+.maket-footer {
+    padding: 30px;
 }

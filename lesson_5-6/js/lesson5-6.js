@@ -45,7 +45,7 @@ function remove() {
 
 function click(event) {
     el = event.toElement;
-    if (el.tagName == "SPAN") {return};
+    if (el.tagName == "SPAN") {return}
     [].forEach.call(el.parentElement.children, function (el) {
         el.classList.remove("edit");
     });
@@ -88,6 +88,15 @@ function archive() {
         var ulOther = document.getElementById("todo");
         ulOther.removeChild(items[i]);
     }
+
+}
+
+function sortList() {
+    var elems = document.getElementById("todo");
+    elems = Array.prototype.slice.call(elems); // теперь elems - массив
+    console.dir(elems);
+
+    elems.sort();
 
 }
 
