@@ -1245,49 +1245,49 @@ span {
 
 /*Background*/
 #main-body {
-  background: #ababab url("../../img/bg_main.jpg") no-repeat fixed center center;
+  background: #ababab url("../img/bg_main.jpg") no-repeat fixed center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
 #lesson1 {
-  background: #434824 url("../../img/bg_l1.jpg") no-repeat fixed center center;
+  background: #434824 url("../img/bg_l1.jpg") no-repeat fixed center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
 #lesson2 {
-  background: #4b7aa6 url("../../img/bg_l2.jpg") no-repeat fixed center center;
+  background: #4b7aa6 url("../img/bg_l2.jpg") no-repeat fixed center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
 #lesson3 {
-  background: #60544c url("../../img/bg_l3.jpg") no-repeat fixed center center;
+  background: #60544c url("../img/bg_l3.jpg") no-repeat fixed center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
 #lesson4_1 {
-  background: #f3a205 url("../../img/bg_tamagotchi.jpg") no-repeat fixed center center;
+  background: #f3a205 url("../img/bg_tamagotchi.jpg") no-repeat fixed center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
 #lesson4_2 {
-  background: #7b8508 url("../../img/bg_l4.jpg") no-repeat fixed center center;
+  background: #7b8508 url("../img/bg_l4.jpg") no-repeat fixed center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
 #lesson5-6 {
-  background: rgba(5, 147, 150, 0.8) url("../../img/bg_l5.jpg") no-repeat fixed center center;
+  background: rgba(5, 147, 150, 0.8) url("../img/bg_l5.jpg") no-repeat fixed center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
