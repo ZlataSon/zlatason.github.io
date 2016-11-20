@@ -92,12 +92,30 @@ function archive() {
 }
 
 function sortList() {
-    var elems = document.getElementById("todo");
+    var todo = document.getElementById("todo");
+    var elems = todo.children;
     elems = Array.prototype.slice.call(elems); // теперь elems - массив
     console.dir(elems);
 
-    elems.sort();
+    function alphabetical(a, b) {
+        var A = a.firstChild.nodeValue;
+        var B = b.firstChild.nodeValue;
+        if (A < B) {
+            return -1;
+        } else if (A > B){
+            return  1;
+        }else{
+            return 0;
+        }
+    }
+    elems.sort(alphabetical);
 
+    while (todo.firstChild) {
+        todo.removeChild(todo.firstChild);
+    }
+    elems.forEach(function(elem) {
+        todo.appendChild(elem);
+    });
 }
 
 // TASK 2. Water algorithm

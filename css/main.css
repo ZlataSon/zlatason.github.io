@@ -1238,11 +1238,6 @@ span {
   text-align: justify;
   padding: 10px 15px; }
 
-@media screen and (max-width: 900px) {
-  a, p, h2, h3, h4, h5 {
-    font-size: 0.7em;
-    line-height: 1em; } }
-
 /*Background*/
 #main-body {
   background: #ababab url("../img/bg_main.jpg") no-repeat fixed center center;
@@ -1811,16 +1806,20 @@ span.done {
   border: 1px solid #ababab;
   border-radius: 5px;
   background: rgba(34, 125, 171, 0.5); }
+  #tint .water:nth-child(even) {
+    color: #0b97c4;
+    font-size: 50px;
+    margin: 25px; }
+  #tint .water:nth-child(odd) {
+    color: #0010c4;
+    font-size: 65px;
+    margin: 20px; }
 
-#tint .water:nth-child(even) {
-  color: #0b97c4;
-  font-size: 50px;
-  margin: 25px; }
-
-#tint .water:nth-child(odd) {
-  color: #0010c4;
-  font-size: 65px;
-  margin: 20px; }
+@media (max-width: 798px) {
+  #tint .water:nth-child(even),
+  #tint .water:nth-child(odd) {
+    font-size: 25px;
+    margin: 3px; } }
 
 #archive-list {
   margin: 5px 5px 5px 70px;
@@ -1832,15 +1831,14 @@ span.done {
   padding: 3px;
   line-height: 1;
   text-align: right; }
-
-#archive-list li::after {
-  content: '✓';
-  font-size: 16px;
-  display: block;
-  float: right;
-  margin-left: 5px;
-  color: #f34754;
-  font-weight: bold; }
+  #archive-list li::after {
+    content: '✓';
+    font-size: 16px;
+    display: block;
+    float: right;
+    margin-left: 5px;
+    color: #f34754;
+    font-weight: bold; }
 
 /*Lesson 5-6 task 3 maket*/
 #maket .container-fluid {
