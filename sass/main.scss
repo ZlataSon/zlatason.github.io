@@ -1,0 +1,23 @@
+
+@import 'utils/variables';
+@import 'utils/mixins';
+
+@import 'base/normalize';
+@import 'base/grid';
+@import 'base/base';
+
+@import 'layout/background';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'components/placeholders';
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/video';
+@import 'components/catalog-menu';
+
+@import 'pages/lesson_1-3';
+@import 'pages/lesson_4';
+@import 'pages/lesson_5-6';
+@import 'pages/lesson_7';
+

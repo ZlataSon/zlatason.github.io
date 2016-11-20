@@ -1,0 +1,131 @@
+
+/*Background*/
+
+#main-body {
+  background: rgb(171, 171, 171) url("../../img/bg_main.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#lesson1 {
+  background: rgb(67, 72, 36) url("../../img/bg_l1.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#lesson2 {
+  background: rgb(75, 122, 166) url("../../img/bg_l2.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#lesson3 {
+  background: rgb(96, 84, 76) url("../../img/bg_l3.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#lesson4_1 {
+  background: rgb(243,162,5) url("../../img/bg_tamagotchi.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#lesson4_2 {
+  background: rgb(123,133,8) url("../../img/bg_l4.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#lesson5-6 {
+  background: rgba(5,147,150,0.8) url("../../img/bg_l5.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#main-body .wrapper1 {
+  margin: 55px;
+  padding: 20px;
+  min-height: 200px;
+  background: rgba(66, 81, 120, 0.9);
+  color: rgb(255, 255, 255);
+}
+
+#main-body .wrapper2 {
+  margin: 55px;
+  padding: 0;
+  min-height: 200px;
+  background: transparent;
+}
+
+#lesson1 .wrapper {
+  margin: 55px;
+  padding: 20px;
+  min-height: 200px;
+  background: rgba(67, 72, 36, 0.9);
+  color: rgb(255, 255, 255);
+}
+
+#lesson2 .wrapper {
+  margin: 55px;
+  padding: 20px;
+  min-height: 200px;
+  background: rgba(75, 122, 166, 0.9);
+  color: rgb(255, 255, 255);
+}
+
+#lesson3 .wrapper {
+  margin: 55px;
+  padding: 20px;
+  min-height: 200px;
+  background: rgba(96, 84, 76, 0.85);
+  color: rgb(255, 255, 255);
+}
+
+#lesson4_1 .wrapper {
+  margin: 55px;
+  padding: 20px;
+  min-height: 200px;
+  background: rgba(243,162,5,0.9);
+  color: rgb(255, 255, 255);
+}
+
+#lesson4_2 .wrapper {
+  margin: 55px;
+  padding: 20px;
+  min-height: 200px;
+  background: rgba(123,133,8,0.8);
+  color: rgb(255, 255, 255);
+}
+
+#lesson5-6 {
+  overflow: hidden;
+}
+
+#maket {
+  background: rgba(255, 255, 255, 1);
+  text-shadow: none;
+  box-shadow: none;
+}
+
+#lesson5-6 .wrapper {
+  margin: 50px;
+  padding: 20px;
+  min-height: 100px;
+  background: rgba(5,147,150,0.85);
+  color: rgb(255, 255, 255);
+}
