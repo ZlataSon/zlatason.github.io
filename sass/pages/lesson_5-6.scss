@@ -1,0 +1,384 @@
+/*===================
+ page Lesson 5 style, TodoList ...
+ ====================*/
+
+.todo-header input {
+  background-color: rgba(247, 246, 246, 0.78);
+  border: 2px solid #72E3FC;
+  border-radius: 15px;
+  height: 34px;
+  width: 85%;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  padding: 0 40px 0 10px;
+}
+
+.todo-header input:focus {
+  outline: none;
+}
+
+.todo-header {
+  color: #72E3FC;
+  font-size: 35px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.todo-header .add-btn,
+.todo-header .remove-btn,
+#btn-archive,
+.sort-btn {
+  -webkit-appearance: button;
+  cursor: pointer;
+  height: 34px;
+  margin-left: -40px;
+  background-color: #6BE4FF;
+  border: none;
+  border-radius: 15px;
+  color: #858585;
+  font-size: 14px;
+}
+
+.todo-header .remove-btn,
+#btn-archive,
+.sort-btn {
+  margin: 0;
+  padding: 5px 13px;
+}
+
+.todo-header .add-btn:hover,
+.todo-header .remove-btn:hover,
+#todo span:hover,
+#btn-archive:hover,
+.sort-btn:hover {
+  background-color: #58D2ED;
+}
+
+#todo span,
+#btn-archive,
+.sort-btn {
+  min-width: 85px;
+  text-align: center;
+}
+
+#todo {
+  margin: 0;
+  padding: 0;
+}
+
+#todo li {
+  font-size: 16px;
+  margin: 0;
+  padding: 5px 85px 5px 20px;
+  position: relative;
+}
+
+#todo li::before {
+  content: '✓';
+  font-size: 16px;
+  display: block;
+  float: left;
+  margin-right: 5px;
+  color: #6BE4FF;
+  font-weight: bold;
+}
+
+#todo li.edit::after {
+  content: 'change';
+  font-size: 16px;
+  display: block;
+  float: left;
+  margin-right: 5px;
+  color: #6BE4FF;
+  font-weight: bold;
+}
+
+span.done {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  text-align: right;
+  display: block;
+  background: #6BE4FF;
+  width: auto;
+  height: 24px;
+  margin: 5px 0;
+  border: 1px solid #72E3FC;
+  border-radius: 15px;
+  line-height: 1.5;
+  text-shadow: none;
+  cursor: pointer;
+  color: #858585;
+  font-size: 14px;
+}
+
+#todo li.checkedNot {
+  background: transparent;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+#todo li.checked {
+  background: rgba(45, 34, 34, 0.2);
+  color: #fff;
+  text-decoration: line-through;
+}
+
+#alert {
+  padding: 10px 25px 0;
+}
+
+#tint {
+  padding: 25px 20px;
+  margin: 10px auto;
+  width: 85%;
+  border: 1px solid rgb(171, 171, 171);
+  border-radius: 5px;
+  background: rgba(34, 125, 171, 0.5);
+}
+
+#tint .water:nth-child(even) {
+  color: #0b97c4;
+  font-size: 50px;
+  margin: 25px;
+}
+
+#tint .water:nth-child(odd) {
+  color: #0010c4;
+  font-size: 65px;
+  margin: 20px;
+}
+
+#archive-list {
+  margin: 5px 5px 5px 70px;
+  padding: 5px;
+}
+
+#archive-list li {
+  color: rgb(226, 212, 203);
+  font-size: 16px;
+  padding: 3px;
+  line-height: 1;
+  text-align: right;
+}
+
+#archive-list li::after {
+  content: '✓';
+  font-size: 16px;
+  display: block;
+  float: right;
+  margin-left: 5px;
+  color: #f34754;
+  font-weight: bold;
+}
+
+/*Lesson 5-6 task 3 maket*/
+
+#maket .container-fluid {
+  max-width: 1200px;
+}
+
+.img-maket img {
+  width: 50%;
+  height: auto;
+}
+
+.maket-menu::after,
+.maket-welcome::after,
+.maket-text-block::after,
+.small-block::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.maket-header {
+  background: rgb(146, 193, 4);
+  background: -webkit-linear-gradient(rgb(70, 93, 2), rgb(146, 193, 4));
+  background: -o-linear-gradient(rgb(70, 93, 2), rgb(146, 193, 4));
+  background: -moz-linear-gradient(rgb(70, 93, 2), rgb(146, 193, 4));
+  background: linear-gradient(rgb(70, 93, 2), rgb(146, 193, 4));
+}
+
+#maket {
+  h2 {
+    font-size: 36px;
+    text-align: left;
+    font-weight: 100;
+    margin: 0;
+    padding: 30px;
+    color: rgb(0, 0, 0);
+  }
+
+  h2 span {
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+  }
+
+  h3 {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 15px;
+    margin: 5px 0;
+  }
+
+  p:first-line {
+    color: rgb(90, 197, 50);
+  }
+
+  p + p:first-line {
+    color: rgb(0, 0, 0);
+  }
+
+  p {
+    margin-left: 15px;
+  }
+
+  p, a {
+    color: rgb(0, 0, 0);
+  }
+
+  .maket-title a,
+  .maket-title a span {
+    color: rgb(255, 255, 255);
+  }
+
+  a:hover,
+  a:focus {
+    color: rgb(90, 197, 50);
+  }
+}
+
+.maket-menu li a {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+
+.maket-title a:hover,
+.maket-title a:focus {
+  color: rgb(27, 255, 6);
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+.maket-menu {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+
+.maket-menu li {
+  float: left;
+  width: 20%;
+  margin: 0;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.maket-menu li:after {
+  content: "∴";
+  font-size: 24px;
+  display: block;
+  float: right;
+  margin: 0 auto;
+  padding: 0;
+  font-weight: bold;
+}
+
+.maket-menu li:last-child:after {
+  content: none;
+}
+
+.maket-menu li a:hover,
+.maket-menu li a:focus {
+  color: rgb(90, 197, 50);
+}
+
+.maket-welcome {
+  background: rgb(238, 240, 252);
+  padding: 30px;
+}
+
+#maket .maket-welcome .block {
+  float: left;
+  width: 50%;
+  margin: 0;
+  padding: 15px 0;
+  text-align: left;
+}
+
+#maket .maket-welcome .block h2 {
+  margin-left: -7%;
+}
+
+.maket-text-block .block:first-child,
+.small-block .block:first-child {
+  float: left;
+  width: 40%;
+  margin: 0;
+  padding: 15px;
+  text-align: left;
+  position: relative;
+}
+
+.maket-text-block > .block:first-child:after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  border-right: 2px solid rgb(238, 240, 252);
+}
+
+.maket-text-block .block:last-child,
+.small-block .block:last-child {
+  float: left;
+  width: 60%;
+  margin: 0;
+  padding: 15px;
+  text-align: left;
+}
+
+.block hr {
+  clear: both;
+  float: none;
+  width: 95%;
+  height: 2px;
+  margin: 0.7em auto;
+  border: none;
+  background: rgb(238, 240, 252);
+}
+
+.line {
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 15px;
+  margin: 0.7em auto;
+  border: none;
+  background: rgb(238, 240, 252);
+}
+
+.maket-footer {
+  padding: 30px;
+}
+
+@media (max-width: 798px) {
+  .maket-menu li,
+  #maket .maket-welcome .block,
+  #maket .block {
+    width: 100%;
+  }
+  .maket-menu li:after {
+    content: "";
+    margin: 0 auto;
+    padding: 5px 0;
+  }
+}
+
+

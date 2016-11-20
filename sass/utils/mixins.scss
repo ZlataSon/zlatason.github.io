@@ -1,0 +1,11 @@
+/// btn
+
+@mixin btn {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  text-decoration: none;
+  border-radius: 0.2em;
+  color: #ffffff;
+}
