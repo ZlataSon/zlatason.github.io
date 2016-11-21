@@ -184,7 +184,7 @@ span.done {
 /*Lesson 5-6 task 3 maket*/
 
 #maket .container-fluid {
-  max-width: 1200px;
+  max-width: 675px;
 }
 
 .img-maket img {
@@ -202,50 +202,67 @@ span.done {
 }
 
 .maket-header {
-  background: rgb(146, 193, 4);
-  background: -webkit-linear-gradient(rgb(70, 93, 2), rgb(146, 193, 4));
-  background: -o-linear-gradient(rgb(70, 93, 2), rgb(146, 193, 4));
-  background: -moz-linear-gradient(rgb(70, 93, 2), rgb(146, 193, 4));
-  background: linear-gradient(rgb(70, 93, 2), rgb(146, 193, 4));
+  background: rgb(153, 204, 1);
+  background: -webkit-linear-gradient(rgb(118, 151, 21), rgb(153, 204, 1));
+  background: -o-linear-gradient(rgb(118, 151, 21), rgb(153, 204, 1));
+  background: -moz-linear-gradient(rgb(118, 151, 21), rgb(153, 204, 1));
+  background: linear-gradient(rgb(118, 151, 21), rgb(153, 204, 1));
 }
 
 #maket {
   h2 {
-    font-size: 36px;
+    font-size: 32px;
+    font-family: Helvetica, arial, serif;
     text-align: left;
     font-weight: 100;
     margin: 0;
     padding: 30px;
-    color: rgb(0, 0, 0);
+    color: #093500;
   }
 
   h2 span {
     font-weight: 700;
-    color: rgb(0, 0, 0);
+    color: #093500;
   }
 
   h3 {
-    font-size: 24px;
-    color: rgb(0, 0, 0);
     text-align: left;
-    padding: 15px;
+    padding: 0 0 0 15px;
     margin: 5px 0;
+    color: #093500;
+    //font-family: "Myriad  Pro";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 14px;
   }
 
   p:first-line {
-    color: rgb(90, 197, 50);
+    color: rgb(128, 166, 15);
+    font-size: 11px;
+    font-weight: 700;
   }
 
   p + p:first-line {
-    color: rgb(0, 0, 0);
+    color: #093500;
+    font-size: 10px;
+    font-weight: 400;
   }
 
   p {
-    margin-left: 15px;
+    padding: 15px 0 0 15px;
+    //font-family: Tahoma;
+    line-height: 14px;
+    color: #093500;
+    font-size: 10px;
+    font-weight: 400;
   }
 
   p, a {
     color: rgb(0, 0, 0);
+  }
+
+  .maket-title h2 {
+    padding: 27px 0 28px 35px;
   }
 
   .maket-title a,
@@ -255,19 +272,20 @@ span.done {
 
   a:hover,
   a:focus {
-    color: rgb(90, 197, 50);
+    color: rgb(128, 166, 15);
   }
 }
 
 .maket-menu li a {
-  font-size: 24px;
-  color: rgb(0, 0, 0);
-  text-align: left;
+  //font-family: "Myriad  Pro";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 14px;
 }
 
 .maket-title a:hover,
 .maket-title a:focus {
-  color: rgb(27, 255, 6);
+  color: rgb(128, 166, 15);
   text-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
 
@@ -277,38 +295,50 @@ span.done {
   -webkit-margin-start: 0;
   -webkit-margin-end: 0;
   -webkit-padding-start: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
 }
 
 .maket-menu li {
-  float: left;
-  width: 20%;
-  margin: 0;
-  padding: 15px 0;
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  padding: 1%;
   text-align: center;
 }
 
-.maket-menu li:after {
-  content: "∴";
-  font-size: 24px;
-  display: block;
-  float: right;
+.maket-menu li img {
+  width: auto;
   margin: 0 auto;
-  padding: 0;
-  font-weight: bold;
 }
 
-.maket-menu li:last-child:after {
-  content: none;
+.maket-menu li:first-child {
+  list-style-image: none;
 }
 
 .maket-menu li a:hover,
 .maket-menu li a:focus {
-  color: rgb(90, 197, 50);
+  color: rgb(128, 166, 15);
 }
 
 .maket-welcome {
   background: rgb(238, 240, 252);
-  padding: 30px;
+  padding: 6px;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 190px;
+  }
+}
+
+.small-block img {
+    width: 141px;
+    height: 94px;
 }
 
 #maket .maket-welcome .block {
@@ -320,7 +350,12 @@ span.done {
 }
 
 #maket .maket-welcome .block h2 {
-  margin-left: -7%;
+  margin-left: -49px;
+  padding: 10px 0;
+  color: #093500;
+  font-family: Helvetica, arial, serif;
+  font-size: 32px;
+  line-height: 14px;
 }
 
 .maket-text-block .block:first-child,
@@ -357,23 +392,28 @@ span.done {
   float: none;
   width: 95%;
   height: 2px;
-  margin: 0.7em auto;
+  margin: 15px auto;
   border: none;
   background: rgb(238, 240, 252);
+}
+
+#maket .small-block > .block {
+  margin: 0;
+  padding: 0;
 }
 
 .line {
   clear: both;
   float: none;
   width: 100%;
-  height: 15px;
-  margin: 0.7em auto;
+  height: 5px;
+  margin: 0 auto;
   border: none;
   background: rgb(238, 240, 252);
 }
 
 .maket-footer {
-  padding: 30px;
+  padding: 26px 0 27px 30px;
 }
 
 @media (max-width: 798px) {

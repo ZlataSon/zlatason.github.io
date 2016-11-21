@@ -1842,7 +1842,7 @@ span.done {
 
 /*Lesson 5-6 task 3 maket*/
 #maket .container-fluid {
-  max-width: 1200px; }
+  max-width: 675px; }
 
 .img-maket img {
   width: 50%;
@@ -1857,42 +1857,56 @@ span.done {
   clear: both; }
 
 .maket-header {
-  background: #92c104;
-  background: -webkit-linear-gradient(#465d02, #92c104);
-  background: -o-linear-gradient(#465d02, #92c104);
-  background: -moz-linear-gradient(#465d02, #92c104);
-  background: linear-gradient(#465d02, #92c104); }
+  background: #99cc01;
+  background: -webkit-linear-gradient(#769715, #99cc01);
+  background: -o-linear-gradient(#769715, #99cc01);
+  background: -moz-linear-gradient(#769715, #99cc01);
+  background: linear-gradient(#769715, #99cc01); }
 
 #maket h2 {
-  font-size: 36px;
+  font-size: 32px;
+  font-family: Helvetica, arial, serif;
   text-align: left;
   font-weight: 100;
   margin: 0;
   padding: 30px;
-  color: black; }
+  color: #093500; }
 
 #maket h2 span {
   font-weight: 700;
-  color: black; }
+  color: #093500; }
 
 #maket h3 {
-  font-size: 24px;
-  color: black;
   text-align: left;
-  padding: 15px;
-  margin: 5px 0; }
+  padding: 0 0 0 15px;
+  margin: 5px 0;
+  color: #093500;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 14px; }
 
 #maket p:first-line {
-  color: #5ac532; }
+  color: #80a60f;
+  font-size: 11px;
+  font-weight: 700; }
 
 #maket p + p:first-line {
-  color: black; }
+  color: #093500;
+  font-size: 10px;
+  font-weight: 400; }
 
 #maket p {
-  margin-left: 15px; }
+  padding: 15px 0 0 15px;
+  line-height: 14px;
+  color: #093500;
+  font-size: 10px;
+  font-weight: 400; }
 
 #maket p, #maket a {
   color: black; }
+
+#maket .maket-title h2 {
+  padding: 27px 0 28px 35px; }
 
 #maket .maket-title a,
 #maket .maket-title a span {
@@ -1900,16 +1914,16 @@ span.done {
 
 #maket a:hover,
 #maket a:focus {
-  color: #5ac532; }
+  color: #80a60f; }
 
 .maket-menu li a {
-  font-size: 24px;
-  color: black;
-  text-align: left; }
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 14px; }
 
 .maket-title a:hover,
 .maket-title a:focus {
-  color: #1bff06;
+  color: #80a60f;
   text-shadow: 2px 2px 3px black; }
 
 .maket-menu {
@@ -1917,34 +1931,43 @@ span.done {
   -webkit-margin-after: 0;
   -webkit-margin-start: 0;
   -webkit-margin-end: 0;
-  -webkit-padding-start: 0; }
+  -webkit-padding-start: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px; }
 
 .maket-menu li {
-  float: left;
-  width: 20%;
-  margin: 0;
-  padding: 15px 0;
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  padding: 1%;
   text-align: center; }
 
-.maket-menu li:after {
-  content: "∴";
-  font-size: 24px;
-  display: block;
-  float: right;
-  margin: 0 auto;
-  padding: 0;
-  font-weight: bold; }
+.maket-menu li img {
+  width: auto;
+  margin: 0 auto; }
 
-.maket-menu li:last-child:after {
-  content: none; }
+.maket-menu li:first-child {
+  list-style-image: none; }
 
 .maket-menu li a:hover,
 .maket-menu li a:focus {
-  color: #5ac532; }
+  color: #80a60f; }
 
 .maket-welcome {
   background: #eef0fc;
-  padding: 30px; }
+  padding: 6px;
+  position: relative; }
+  .maket-welcome img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 190px; }
+
+.small-block img {
+  width: 141px;
+  height: 94px; }
 
 #maket .maket-welcome .block {
   float: left;
@@ -1954,7 +1977,12 @@ span.done {
   text-align: left; }
 
 #maket .maket-welcome .block h2 {
-  margin-left: -7%; }
+  margin-left: -49px;
+  padding: 10px 0;
+  color: #093500;
+  font-family: Helvetica, arial, serif;
+  font-size: 32px;
+  line-height: 14px; }
 
 .maket-text-block .block:first-child,
 .small-block .block:first-child {
@@ -1987,21 +2015,25 @@ span.done {
   float: none;
   width: 95%;
   height: 2px;
-  margin: 0.7em auto;
+  margin: 15px auto;
   border: none;
   background: #eef0fc; }
+
+#maket .small-block > .block {
+  margin: 0;
+  padding: 0; }
 
 .line {
   clear: both;
   float: none;
   width: 100%;
-  height: 15px;
-  margin: 0.7em auto;
+  height: 5px;
+  margin: 0 auto;
   border: none;
   background: #eef0fc; }
 
 .maket-footer {
-  padding: 30px; }
+  padding: 26px 0 27px 30px; }
 
 @media (max-width: 798px) {
   .maket-menu li,
