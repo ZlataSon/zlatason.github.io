@@ -1957,14 +1957,13 @@ span.done {
 
 .maket-welcome {
   background: #eef0fc;
-  padding: 6px;
   position: relative; }
   .maket-welcome img {
     position: absolute;
     top: 0;
     left: 0;
     width: auto;
-    height: 190px; }
+    height: 100%; }
 
 .small-block img {
   width: 141px;
