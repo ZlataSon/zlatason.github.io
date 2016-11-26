@@ -7,7 +7,7 @@
   border: 2px solid #72E3FC;
   border-radius: 15px;
   height: 34px;
-  width: 85%;
+  width: 95%;
   color: #333;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -25,43 +25,6 @@
   padding: 10px 0;
 }
 
-.todo-header .add-btn,
-.todo-header .remove-btn,
-#btn-archive,
-.sort-btn {
-  -webkit-appearance: button;
-  cursor: pointer;
-  height: 34px;
-  margin-left: -40px;
-  background-color: #6BE4FF;
-  border: none;
-  border-radius: 15px;
-  color: #858585;
-  font-size: 14px;
-}
-
-.todo-header .remove-btn,
-#btn-archive,
-.sort-btn {
-  margin: 0;
-  padding: 5px 13px;
-}
-
-.todo-header .add-btn:hover,
-.todo-header .remove-btn:hover,
-#todo span:hover,
-#btn-archive:hover,
-.sort-btn:hover {
-  background-color: #58D2ED;
-}
-
-#todo span,
-#btn-archive,
-.sort-btn {
-  min-width: 85px;
-  text-align: center;
-}
-
 #todo {
   margin: 0;
   padding: 0;
@@ -70,7 +33,7 @@
 #todo li {
   font-size: 16px;
   margin: 0;
-  padding: 5px 85px 5px 20px;
+  padding: 10px 50% 10px 10px;
   position: relative;
 }
 
@@ -94,23 +57,81 @@
   font-weight: bold;
 }
 
-span.done {
+.todo-header .add-btn,
+#btn-archive,
+.sort-btn {
+  -webkit-appearance: button;
+  cursor: pointer;
+  height: 34px;
+  background-color: #6BE4FF;
+  border: none;
+  border-radius: 15px;
+  color: #858585;
+  font-size: 14px;
+}
+
+.todo-header .add-btn {
+  margin-left: -40px;
+}
+
+#btn-archive,
+.sort-btn {
+  margin: 5px 0 5px 10px;
+  padding: 5px 13px;
+}
+
+a.remove-btn {
   position: absolute;
-  top: 0;
-  right: 5px;
-  text-align: right;
+  top: 5px;
+  right: 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  color: #858585;
+  padding: 0px 11px;
   display: block;
   background: #6BE4FF;
   width: auto;
-  height: 24px;
+  height: 34px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 34px;
+  text-shadow: none;
+}
+
+.todo-header .add-btn:hover,
+a.remove-btn:hover,
+#todo span:hover,
+#btn-archive:hover,
+.sort-btn:hover {
+  background-color: #58D2ED;
+}
+
+#todo span,
+#btn-archive,
+.sort-btn {
+  min-width: 85px;
+  text-align: center;
+}
+
+span.done {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  display: block;
+  background: #6BE4FF;
+  width: auto;
+  height: 34px;
   margin: 5px 0;
   border: 1px solid #72E3FC;
   border-radius: 15px;
-  line-height: 1.5;
+  line-height: 34px;
   text-shadow: none;
   cursor: pointer;
   color: #858585;
   font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 400;
 }
 
 #todo li.checkedNot {
@@ -432,5 +453,23 @@ span.done {
     content: "";
     margin: 0 auto;
     padding: 5px 0;
+  }
+
+  #maket .maket-welcome .block {
+    width: 100%;
+    min-height: 190px;
+  }
+
+ .maket-welcome img {
+    width: 100%;
+    position: relative;
+  }
+
+  #maket .maket-welcome .block h2 {
+    margin-left: 15px;
+  }
+
+  #maket .small-block > .block img {
+    margin: 15px;
   }
 }

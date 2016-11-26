@@ -23,6 +23,13 @@ function create() {
             span.innerText = "Not done";
             li.appendChild(span);
             span.onclick = checked;
+            var a = document.createElement("a");
+            a.className = "remove-btn";
+            li.appendChild(a);
+            a.onclick = remove;
+            var i = document.createElement("i");
+            i.className = "fa fa-trash";
+            a.appendChild(i);
         }
         else if (status == "Edit") {
             el.firstChild.nodeValue = input.value;
@@ -38,9 +45,12 @@ function create() {
     }
 }
 
-function remove() {
-    var ul = document.getElementById("todo");
-    ul.removeChild(ul.lastChild);
+function remove(e) {
+    console.log("Delete task...");
+    var listItem = this.parentNode;
+    var ul = listItem.parentNode;
+    ul.removeChild(listItem);
+    e.stopPropagation();
 }
 
 function click(event) {
@@ -56,6 +66,7 @@ function click(event) {
     input.value = el.firstChild.textContent;
     status = "Edit";
     document.getElementById("btn-change").innerText = status;
+    event.stopPropagation();
 }
 
 function checked() {
