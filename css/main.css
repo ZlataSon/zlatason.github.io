@@ -1715,7 +1715,9 @@ hr {
   font-size: 16px;
   margin: 0;
   padding: 10px 50% 10px 10px;
-  position: relative; }
+  position: relative;
+  clear: both;
+  overflow: hidden; }
 
 #todo li::before {
   content: '✓';
@@ -1727,7 +1729,7 @@ hr {
   font-weight: bold; }
 
 #todo li.edit::after {
-  content: 'change';
+  content: 'edit';
   font-size: 16px;
   display: block;
   float: left;

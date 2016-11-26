@@ -35,6 +35,8 @@
   margin: 0;
   padding: 10px 50% 10px 10px;
   position: relative;
+  clear: both;
+  overflow: hidden;
 }
 
 #todo li::before {
@@ -48,7 +50,7 @@
 }
 
 #todo li.edit::after {
-  content: 'change';
+  content: 'edit';
   font-size: 16px;
   display: block;
   float: left;
