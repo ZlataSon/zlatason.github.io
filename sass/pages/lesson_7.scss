@@ -1,12 +1,125 @@
 /*===================
- page-4
+ lesson_7 jQuery
  ====================*/
 
-.page-4 {
-  background: #ffffff;
+#lesson7 #todoListWrapper {
+  background: rgba(23, 32, 56, 0.9);
 
-  article {
-    padding: 63px 5px 55px 5px;
+  h2 {
+    font-weight: bolder;
+    padding-top: 15px;
   }
+
+  ul li:active {
+    transform: rotate(2deg);
+    background: #cc1f10;
+    border-color: #7f0c15;
+    box-shadow: 0 10px -4px #111;
+  }
+
+  .placeholderBox {
+    background: #fc3;
+    height: 30px;
+    border: dashed 2px #777;
+    border-radius: 3px;
+  }
+
+  #todoListWrapper {
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(23, 32, 56);
+    padding-bottom: 40px;
+    opacity: 0.9;
+  }
+}
+#todoList:after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+#todoList {
+  margin: 5px auto;
+  padding: 0;
+  text-align: center;
+}
+
+#todoList ul {
+  width: 13.714%;
+  margin: 0;
+  padding: 0;
+  display: inline-table;
+  position: relative;
+}
+
+#todoList li{
+  background: none;
+  padding: 10px;
+  border: none;
+  margin: 10px auto;
+  text-align: left;
+  font-size: 12px;
+  list-style: none;
+}
+
+#todoList li:hover {
+  background: rgba(238, 238, 238, 0.42);
+}
+
+#todoList li.listTitle {
+  background: #444;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  margin: 10px auto;
+}
+
+#Bullet {
+  cursor:pointer;
+}
+
+#todoList li.listTitle:hover,
+#todoList li.listTitle:active {
+  cursor: default;
+  transform: none;
+}
+
+#todoList .emptySpace {
+  background: #fc3;
+  border: dashed 1px #777;
+  height: 20px;
+}
+
+#todoList li.addItem {
+  display: none;
+  position: absolute;
+  top: 0;
+  background: none;
+}
+
+#todoList ul:hover li.addItem {
+  display:block;
+}
+
+#todoList li.addItem input {
+  width: 100%;
+  padding: 4px;
+}
+
+#todoList li.addItem:active {
+  transform: none;
+}
+
+#trash {
+  height: 200px;
+  width: 200px;
+  margin: 50px auto;
+  line-height: 200px;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-align: center;
+  background: rgba(220, 25, 25, 0.4);
+  color: white;
 }
 

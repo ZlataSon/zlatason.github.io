@@ -57,6 +57,14 @@
   background-size: cover;
 }
 
+#lesson7 {
+  background: rgba(40, 41, 71, 0.8) url("../img/bg_l7.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 #main-body .wrapper1 {
   margin: 55px;
   padding: 20px;
@@ -127,5 +135,13 @@
   padding: 20px;
   min-height: 100px;
   background: rgba(5,147,150,0.85);
+  color: rgb(255, 255, 255);
+}
+
+#lesson7 .wrapper {
+  margin: 55px;
+  padding: 20px;
+  min-height: 200px;
+  background: rgba(40, 41, 71, 0.8);
   color: rgb(255, 255, 255);
 }

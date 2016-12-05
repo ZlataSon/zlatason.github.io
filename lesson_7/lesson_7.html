@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>M.S./Lesson 6</title>
+    <title>M.S./Lesson 7</title>
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
 
     <link rel="stylesheet" type="text/css" href="../css/main.css">
+
     <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 </head>
 <body id="lesson7">
 
@@ -23,10 +31,10 @@
         </div>
         <hr/>
         <h3>Lesson 7</h3>
-        <h5>"JS - DOM"</h5>
+        <h5>"JS - jQuery (Todo list)"</h5>
         <div class="center">
             <a class="button" href="../index.html">Main page</a>
-            <a class="button" href="https://github.com/ZlataSon/zlatason.github.io/tree/master/lesson_6">My GitHub</a>
+            <a class="button" href="https://github.com/ZlataSon/zlatason.github.io/tree/master/lesson_7">My GitHub</a>
         </div>
     </div>
 </div>
@@ -35,9 +43,12 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12">
-                <ul>Home work Lesson 6:
-                    <li>1. Створити
-                    <li>2. Додаткове завдання</li>
+                <ul>Home work Lesson 7:
+                    <li>Завдання: переписати ToDo-list з використанням jQuery. Зберігайте завдання у localStorage.
+                        (після перезавантаження сторінки всі елементи мають зберігатися). Використати будь-який
+                        drag'n'drop jQuery-плагін, для переміщення елементів. Постарайтеся не використовувати
+                        попередній код, напишіть заново. По зовнішньому вигляду має бути як
+                        <a href="http://todomvc.com">todomvc.com</a>.</li>
                 </ul>
                 <p class="center">if you want to see the result in the console <span>click "Ctrl+Shift+J" or
                     F12</span></p>
@@ -45,24 +56,60 @@
             <hr/>
 
             <div class="col-xs-12">
-                <div class="col-xs-6 center">
-                    <h2>1. <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></h2>
+
+                    <div class="row">
+
+                        <div id="todoListWrapper">
+
+                            <h2>To Do List</h2>
+
+                            <div id="todoList">
+
+                                <ul>
+                                    <li class="listTitle">Monday</li>
+                                    <li class="addItem"><input type="text" placeholder="add new item... "></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="listTitle">Tuesday</li>
+                                    <li class="addItem"><input type="text" placeholder="add new item... "></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="listTitle">Wednesday</li>
+                                    <li class="addItem"><input type="text" placeholder="add new item... "></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="listTitle">Thursday</li>
+                                    <li class="addItem"><input type="text" placeholder="add new item... "></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="listTitle">Friday</li>
+                                    <li class="addItem"><input type="text" placeholder="add new item... "></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="listTitle">Saturday</li>
+                                    <li class="addItem"><input type="text" placeholder="add new item... "></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="listTitle">Sunday</li>
+                                    <li class="addItem"><input type="text" placeholder="add new item... "></li>
+                                </ul>
+
+                            </div>
+
+
+                        </div>
+
+                        <div id="trash"> Drop Items Here To Delete IT</div>
+                    </div>
+
                 </div>
-                <div class="col-xs-6 practice">
 
-
-                </div>
-            </div>
-            <hr/>
-
-            <div class="col-xs-12">
-                <div class="col-xs-6 practice">
-
-                </div>
-
-                <div class="col-xs-6 center">
-                    <h2><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> 2.</h2>
-                </div>
             </div>
 
         </div>
