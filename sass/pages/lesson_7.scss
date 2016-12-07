@@ -4,6 +4,7 @@
 
 #lesson7 #todoListWrapper {
   background: rgba(23, 32, 56, 0.9);
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.5), 0 25px 50px 0 rgba(255, 255, 255, 0.5);
 
   h2 {
     font-weight: bolder;
@@ -119,7 +120,12 @@
   font-size: 0.85em;
   font-weight: bold;
   text-align: center;
-  background: rgba(220, 25, 25, 0.4);
+  background: rgba(220, 25, 25, 0.4) url("../img/trash.png") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: white;
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.5), 0 15px 50px 0 rgba(255, 255, 255, 0.5);
 }
 
