@@ -1,0 +1,73 @@
+#lesson8 {
+  #board {
+    display: block;
+    margin: 25px auto;
+    padding: 2px;
+    border: 5px solid #2f7af5;
+    background: rgba(115, 0, 255, 0.2);
+    width: 290px;
+    height: 290px;
+    position: relative;
+    border-radius: 15px;
+  }
+
+  #buttons {
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+  }
+
+  .img-block {
+    display: block;
+    width: 150px;
+    margin: 10px auto;
+    text-align: center;
+    color: #f3f3f5;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .block {
+    display: block;
+    position: absolute;
+    width: 62px;
+    height: 57px;
+    border: 2px solid #70c0e0;
+    margin: 4px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    color: #f3f3f5;
+    padding: 7px;
+    line-height: 0.9;
+    border-radius: 15px;
+    vertical-align: middle;
+    background: rgba(255, 255 , 255, 0.3);
+  }
+
+  p {
+    color: #ffffff;
+    text-align: justify;
+  }
+
+  .x1y1 { left: 0px; top: 0px;}
+  .x2y1 { left: 70px; top: 0px;}
+  .x3y1 { left: 140px; top: 0px;}
+  .x4y1 { left: 210px; top: 0px;}
+
+  .x1y2 { left: 0px; top: 70px;}
+  .x2y2 { left: 70px; top: 70px;}
+  .x3y2 { left: 140px; top: 70px;}
+  .x4y2 { left: 210px; top: 70px;}
+
+  .x1y3 { left: 0px; top: 140px;}
+  .x2y3 { left: 70px; top: 140px;}
+  .x3y3 { left: 140px; top: 140px;}
+  .x4y3 { left: 210px; top: 140px;}
+
+  .x1y4 { left: 0px; top: 210px;}
+  .x2y4 { left: 70px; top: 210px;}
+  .x3y4 { left: 140px; top: 210px;}
+  .x4y4 { left: 210px; top: 210px;}
+}

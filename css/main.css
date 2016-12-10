@@ -1295,6 +1295,13 @@ span {
   -o-background-size: cover;
   background-size: cover; }
 
+#lesson8 {
+  background: rgba(5, 147, 150, 0.8) url("../img/bg_l8.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 #main-body .wrapper1 {
   margin: 55px;
   padding: 20px;
@@ -1363,6 +1370,13 @@ span {
   padding: 20px;
   min-height: 200px;
   background: rgba(40, 41, 71, 0.8);
+  color: white; }
+
+#lesson8 .wrapper {
+  margin: 55px;
+  padding: 20px;
+  min-height: 200px;
+  background: rgba(80, 102, 116, 0.8);
   color: white; }
 
 /*===================
@@ -1623,6 +1637,27 @@ a.button:focus {
 /*===================
  catalog-menu
  ====================*/
+.canvas-wrap {
+  background: #000;
+  overflow: hidden;
+  margin: 55px;
+  padding: 20px;
+  min-height: 200px;
+  position: relative; }
+
+canvas {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+#c1 {
+  opacity: 0; }
+
+#c2 {
+  background: #000; }
+
 /*===================
  page lesson 1, 2 and 3
  ====================*/
@@ -2340,3 +2375,114 @@ span.done {
   background-size: cover;
   color: white;
   box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.5), 0 15px 50px 0 rgba(255, 255, 255, 0.5); }
+
+#lesson8 #board {
+  display: block;
+  margin: 25px auto;
+  padding: 2px;
+  border: 5px solid #2f7af5;
+  background: rgba(115, 0, 255, 0.2);
+  width: 290px;
+  height: 290px;
+  position: relative;
+  border-radius: 15px; }
+
+#lesson8 #buttons {
+  display: block;
+  margin: 25px auto;
+  text-align: center; }
+
+#lesson8 .img-block {
+  display: block;
+  width: 150px;
+  margin: 10px auto;
+  text-align: center;
+  color: #f3f3f5;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 40px; }
+
+#lesson8 .block {
+  display: block;
+  position: absolute;
+  width: 62px;
+  height: 57px;
+  border: 2px solid #70c0e0;
+  margin: 4px;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  color: #f3f3f5;
+  padding: 7px;
+  line-height: 0.9;
+  border-radius: 15px;
+  vertical-align: middle;
+  background: rgba(255, 255, 255, 0.3); }
+
+#lesson8 p {
+  color: #ffffff;
+  text-align: justify; }
+
+#lesson8 .x1y1 {
+  left: 0px;
+  top: 0px; }
+
+#lesson8 .x2y1 {
+  left: 70px;
+  top: 0px; }
+
+#lesson8 .x3y1 {
+  left: 140px;
+  top: 0px; }
+
+#lesson8 .x4y1 {
+  left: 210px;
+  top: 0px; }
+
+#lesson8 .x1y2 {
+  left: 0px;
+  top: 70px; }
+
+#lesson8 .x2y2 {
+  left: 70px;
+  top: 70px; }
+
+#lesson8 .x3y2 {
+  left: 140px;
+  top: 70px; }
+
+#lesson8 .x4y2 {
+  left: 210px;
+  top: 70px; }
+
+#lesson8 .x1y3 {
+  left: 0px;
+  top: 140px; }
+
+#lesson8 .x2y3 {
+  left: 70px;
+  top: 140px; }
+
+#lesson8 .x3y3 {
+  left: 140px;
+  top: 140px; }
+
+#lesson8 .x4y3 {
+  left: 210px;
+  top: 140px; }
+
+#lesson8 .x1y4 {
+  left: 0px;
+  top: 210px; }
+
+#lesson8 .x2y4 {
+  left: 70px;
+  top: 210px; }
+
+#lesson8 .x3y4 {
+  left: 140px;
+  top: 210px; }
+
+#lesson8 .x4y4 {
+  left: 210px;
+  top: 210px; }

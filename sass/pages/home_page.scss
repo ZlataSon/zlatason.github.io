@@ -1,0 +1,24 @@
+.canvas-wrap {
+  background: #000;
+  overflow: hidden;
+  margin: 55px;
+  padding: 20px;
+  min-height: 200px;
+  position: relative;
+}
+
+canvas {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#c1 {
+  opacity: 0;
+}
+
+#c2 {
+  background: #000;
+}
