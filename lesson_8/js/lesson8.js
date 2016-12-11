@@ -28,6 +28,7 @@ function keyboardEvent(e) {
         case 39: key('right'); break;
     }
     checkWin();
+    e.stopPropagation();
 }
 
 // обрабатываем сдвиг одного блока по направлениям up/down/left/right

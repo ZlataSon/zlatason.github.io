@@ -46,7 +46,7 @@
 }
 
 #todoList ul {
-  width: 13.714%;
+  width: 12%;
   margin: 0;
   padding: 0;
   display: inline-table;
@@ -76,7 +76,8 @@
   margin: 10px auto;
 }
 
-#Bullet {
+#todoList #Bullet {
+  border-bottom: 1px solid #dfdfdf;
   cursor:pointer;
 }
 
@@ -129,3 +130,17 @@
   box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.5), 0 15px 50px 0 rgba(255, 255, 255, 0.5);
 }
 
+#todoList ul.list-done li,
+#todoList li.listTitle-done {
+  background: #dfdfdf;
+  color: #050505;
+}
+
+#todoList ul.list-done #Bullet::before {
+  content: '✓';
+  font-size: 12px;
+  display: inline-block;
+  margin: 0 4px 0 -4px;
+  color: #23f317;
+  font-weight: bold;
+}
