@@ -76,7 +76,7 @@
   margin: 10px auto;
 }
 
-#todoList #Bullet {
+#todoList .Bullet {
   border-bottom: 1px solid #dfdfdf;
   cursor:pointer;
 }
@@ -136,7 +136,7 @@
   color: #050505;
 }
 
-#todoList ul.list-done #Bullet::before {
+#todoList ul.list-done .Bullet::before {
   content: '✓';
   font-size: 12px;
   display: inline-block;
