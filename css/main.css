@@ -2345,7 +2345,7 @@ span.done {
   font-size: 14px;
   margin: 10px auto; }
 
-#todoList #Bullet {
+#todoList .Bullet {
   border-bottom: 1px solid #dfdfdf;
   cursor: pointer; }
 
@@ -2394,15 +2394,17 @@ span.done {
 #todoList ul.list-done li,
 #todoList li.listTitle-done {
   background: #dfdfdf;
-  color: #050505; }
+  color: #050505;
+  text-shadow: none; }
 
-#todoList ul.list-done #Bullet::before {
+#todoList ul.list-done .Bullet::before {
   content: '✓';
   font-size: 12px;
   display: inline-block;
   margin: 0 4px 0 -4px;
-  color: #23f317;
-  font-weight: bold; }
+  color: #c70505;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(95, 12, 12, 0.74); }
 
 #lesson8 #board {
   display: block;
