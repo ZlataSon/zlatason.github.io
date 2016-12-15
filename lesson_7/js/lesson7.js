@@ -8,7 +8,7 @@ $(function () {
 
     $.each( data, function (index, params) {
         $.each( params, function (indexItem, item) {
-            $('#'+index).append('<li id="Bullet">' + item + '</li>');
+            $('#'+index).append('<li class="Bullet">' + item + '</li>');
         });
     });
 
@@ -18,6 +18,21 @@ $(function () {
          connectWith:"ul",
          dropOnEmpty:true,
          placeholder:"emptySpace",
+
+         stop:function(event,ui) {
+
+             var ul = ui.item.parent()[0];
+             var id = +(ul.id);
+             var data = JSON.parse(localStorage.getItem("todoData"));
+             data = data || [[],[],[],[],[],[],[],[]];
+             data[id] = [];
+
+             $(ul.children).filter('.Bullet').each( function (item) {
+                  data[id].push(this.innerText);
+             });
+
+             localStorage.setItem("todoData", JSON.stringify(data));
+         },
 
          receive:function(event,ui) {
             console.log(ui);
@@ -42,7 +57,6 @@ $(function () {
     $('input').keydown(function(e) {
 
         if (e.keyCode == 13) {
-
             var item = $(this).val();
             var id = +($(this).parent().parent()[0].id);
             var data = JSON.parse(localStorage.getItem("todoData"));
@@ -50,10 +64,9 @@ $(function () {
             data[id].push(item);
             localStorage.setItem("todoData", JSON.stringify(data));
 
-            $(this).parent().parent().append('<li id="Bullet">' + item + '</li>');
+            $(this).parent().parent().append('<li class="Bullet">' + item + '</li>');
             $(this).val('');
         }
-
     });
 
     $('#trash').droppable({
