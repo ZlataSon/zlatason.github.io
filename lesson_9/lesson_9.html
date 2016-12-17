@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
 
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=AIzaSyAqdCv73Jd_eOJA9ceM9d0ORqhPw1oqg1o"
+            type="text/javascript"></script>
+    <script src="js/lesson9.js"></script>
+
 </head>
 <body id="lesson9">
 
@@ -51,16 +55,20 @@
             </div>
             <hr/>
 
-            <div class="col-xs-12">
-
+            <div class="col-xs-12" onload="initialize()" onunload="GUnload()">
+                <h3>1. Google Maps</h3>
+                <p>
+                    <label for="sityname">Название города: </label>
+                    <input type="text" name="sityname" id="sityname" />
+                    <input type="button" onclick="getAdress()" value="Найти" />
+                </p>
+                <div id="map_canvas" style="width: 600px; height: 400px"></div>
             </div>
 
         </div>
 
     </div>
 </div>
-
-<script src="js/lesson9.js"></script>
 
 </body>
 
