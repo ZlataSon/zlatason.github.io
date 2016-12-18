@@ -3,9 +3,34 @@
 function initAutocomplete() {
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 49.444431, lng: 32.059769},
-        zoom: 13,
-        mapTypeId: 'roadmap'
+        zoom: 11,
+        mapTypeId: google.maps.MapTypeId.TERRAIN
     });
+
+    var styleArray = [
+        {
+            featureType: "all",
+            stylers: [
+                { hue: "#00ffe6" },
+                { saturation: -10 }
+            ]
+        },{
+            featureType: "road.arterial",
+            elementType: "geometry",
+            stylers: [
+                { lightness: 90 },
+                { visibility: "simplified" }
+            ]
+        },{
+            featureType: "poi.business",
+            elementType: "labels",
+            stylers: [
+                { visibility: "off" }
+            ]
+        },
+    ];
+
+    map.setOptions({styles: styleArray});
 
     // Create the search box and link it to the UI element.
     var input = document.getElementById('pac-input');
