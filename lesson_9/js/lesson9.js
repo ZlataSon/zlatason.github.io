@@ -8,7 +8,7 @@ $('#weatherBTN').click(function () {
 function doItWeather() {
     var lat = $('#lat').val();
     var lng = $('#lng').val();
-    var output = $.ajax({
+    var outputWeather = $.ajax({
         method: 'GET',
         cache: false,
         url: 'https://simple-weather.p.mashape.com/weatherdata', // The URL to the API. You can get this by clicking on "Show CURL example" from an API profile
@@ -44,7 +44,7 @@ $('#loveBTN').click(function () {
 function doItLove() {
     var name1 = $('#name1').val();
     var name2 = $('#name2').val();
-    var output = $.ajax({
+    var outputLove = $.ajax({
         method: 'GET',
         cache: false,
         url: 'https://love-calculator.p.mashape.com/getPercentage', // The URL to the API. You can get this by clicking on "Show CURL example" from an API profile
