@@ -61,6 +61,9 @@ function initAutocomplete() {
             console.log("Lat: " + place.geometry.location.lat());
             console.log("Lng: " + place.geometry.location.lng());
 
+            document.getElementById("map-lat-lng").innerHTML = "<br/>" + "Lat: " + place.geometry.location.lat() + "<br/>" +
+                "Lng: " + place.geometry.location.lng();
+
             if (place.geometry.viewport) {
                 // Only geocodes have viewport.
                 bounds.union(place.geometry.viewport);
