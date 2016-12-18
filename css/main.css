@@ -2527,19 +2527,25 @@ span.done {
   height: 100%;
   text-shadow: none; }
 
-#lesson9 .pac-container span,
-#lesson9 .pac-container div,
-#lesson9 .pac-container p,
-#lesson9 .pac-container a {
-  color: #2b2b2b !important;
-  margin: 0;
-  padding: 0 2px; }
+#lesson9 .pac-container span {
+  color: #737373; }
 
-#lesson9 .pac-item,
-#lesson9 .pac-item-selected,
-#lesson9 .pac-item-query,
-#lesson9 .pac-matched {
-  color: #2b2b2b; }
+#lesson9 .pac-container .pac-item,
+#lesson9 .pac-container .pac-item-selected,
+#lesson9 .pac-container .pac-item:hover {
+  color: #737373; }
+
+#lesson9 .pac-container .pac-item-query {
+  color: #343434; }
+
+#lesson9 .pac-container .pac-matched {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-weight: 900;
+  text-shadow: 1px 1px #8589cc;
+  letter-spacing: 1px;
+  font-size: 14px; }
 
 #lesson9 .map-wrap {
   height: 500px;
@@ -2604,11 +2610,12 @@ span.done {
   width: 300px;
   text-shadow: none;
   color: #2b2b2b;
-  box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; }
+  box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px 1px; }
 
 #lesson9 .latLng span {
   color: #2b2b2b;
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 11px; }
 
 /*===================
    Weather
@@ -2661,7 +2668,8 @@ span.done {
   /* IE10+ */ }
   #lesson9 .love h4 {
     color: #cc0000;
-    font-size: 30px; }
+    font-size: 30px;
+    text-shadow: 2px 2px 3px #211817; }
   #lesson9 .love input {
     background: #cc9c98;
     border-radius: 15px;
@@ -2682,4 +2690,5 @@ span.done {
   color: #cc0000;
   padding: 15px;
   font-size: 28px;
-  font-weight: 700; }
+  font-weight: 700;
+  text-shadow: 2px 2px 3px #211817; }
