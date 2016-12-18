@@ -42,7 +42,8 @@ function initAutocomplete() {
             }
             var icon = {
                 url: place.icon,
-                size: new google.maps.Size(71, 71),
+                // url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                size: new google.maps.Size(90, 90),
                 origin: new google.maps.Point(0, 0),
                 anchor: new google.maps.Point(17, 34),
                 scaledSize: new google.maps.Size(25, 25)
@@ -74,3 +75,4 @@ function initAutocomplete() {
         map.fitBounds(bounds);
     });
 }
+

@@ -2617,6 +2617,14 @@ span.done {
   font-weight: 300;
   font-size: 11px; }
 
+#lesson9 .gm-style .gm-style-iw > div {
+  overflow: inherit !important; }
+
+#lesson9 .poi-info-window .full-width {
+  width: 180px;
+  line-height: 13px;
+  font-size: 11px; }
+
 /*===================
    Weather
    ====================*/
