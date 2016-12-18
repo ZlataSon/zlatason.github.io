@@ -24,8 +24,8 @@ function doItWeather() {
             //console.log(data);
             document.getElementById("weatherResult").innerHTML = data.query.results.channel.lastBuildDate + "<br/>"
                 + data.query.results.channel.description + "<br/>" + "<img src='"+data.query.results.channel.image.url+"'/>" + "<br/>"
-                + "Today: temperature" + " " + data.query.results.channel.item.condition.temp + " " + "C" + ", " + data.query.results.channel.item.condition.text + "<br/>"
-                + "Sunrise: " + data.query.results.channel.astronomy.sunrise + ", " + "sunset: " + data.query.results.channel.astronomy.sunset;
+                + "Today weather: temperature" + " " + data.query.results.channel.item.condition.temp + " " + "C" + ", " + data.query.results.channel.item.condition.text + "<br/>"
+                + "Sunrise: " + data.query.results.channel.astronomy.sunrise + " / " + "Sunset: " + data.query.results.channel.astronomy.sunset;
         },
         error: function(err) { alert(err); },
         beforeSend: function(xhr) {
