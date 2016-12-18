@@ -1,0 +1,155 @@
+#lesson9 {
+  #map {
+    height: 100%;
+    text-shadow: none;
+  }
+
+  .pac-container span,
+  .pac-container div,
+  .pac-container p,
+  .pac-container a {
+    color: #2b2b2b !important;
+    margin: 0;
+    padding: 0 2px;
+  }
+
+  .pac-item,
+  .pac-item-selected,
+  .pac-item-query,
+  .pac-matched {
+    color: #2b2b2b;
+  }
+
+  .map-wrap {
+    height: 500px;
+    margin: 0;
+    padding: 0;
+  }
+  .controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  #pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 300px;
+    text-shadow: none;
+  }
+
+  #pac-input:focus {
+    border-color: #4d90fe;
+  }
+
+  .pac-container {
+    font-family: Roboto;
+    text-shadow: none;
+    color: #4d90fe;
+  }
+
+  #type-selector {
+    color: #8e8e8e;
+    background-color: #4d90fe;
+    padding: 5px 11px 0px 11px;
+  }
+
+  #type-selector label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  #target {
+    width: 345px;
+    color: #2b2b2b;
+  }
+}
+
+.love {
+  h4 {
+    color: #cc0000;
+  }
+
+  input {
+    background: #cc9c98;
+    border-radius: 15px;
+    color: #651717;
+    -webkit-appearance: none;
+    padding: 7px;
+  }
+
+  /* Webkit */
+  ::-webkit-input-placeholder { color: #616161; }
+
+  /* Firefox 4-18 */
+  :-moz-placeholder { color: #616161; }
+
+  /* Firefox 19+ */
+  ::-moz-placeholder { color: #616161; }
+
+  /* IE10+ */
+  :-ms-input-placeholder { color: #616161; }
+
+}
+
+#loveResult,
+.loveResult {
+  color: #cc0000;
+  padding: 15px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.weather {
+  h4 {
+    color: #0f18cc;
+  }
+
+  .yellow {
+    color: #e8de00;
+  }
+
+  input {
+    background: #68ccc7;
+    border-radius: 15px;
+    color: #060857;
+    -webkit-appearance: none;
+    padding: 7px;
+  }
+
+  /* Webkit */
+  ::-webkit-input-placeholder { color: #616161; }
+
+  /* Firefox 4-18 */
+  :-moz-placeholder { color: #616161; }
+
+  /* Firefox 19+ */
+  ::-moz-placeholder { color: #616161; }
+
+  /* IE10+ */
+  :-ms-input-placeholder { color: #616161; }
+
+}
+
+#weatherResult,
+.weatherResult {
+  color: #0f18cc;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 700;
+
+  img {
+    width: 200px;
+    height: auto;
+  }
+}

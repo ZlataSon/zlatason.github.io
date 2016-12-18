@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>M.S./Lesson 7</title>
+    <title>M.S./Lesson 9</title>
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
 
     <link rel="stylesheet" type="text/css" href="../css/main.css">
@@ -12,9 +12,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
 
-    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=AIzaSyAqdCv73Jd_eOJA9ceM9d0ORqhPw1oqg1o"
-            type="text/javascript"></script>
-    <script src="js/lesson9.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa0i7H9iwo5dYSmAsIbtyK-FjMiTOIYyo&libraries=places&callback=initAutocomplete"
+            async defer></script>
+    <script src="js/lesson9_map.js"></script>
 
 </head>
 <body id="lesson9">
@@ -55,20 +56,51 @@
             </div>
             <hr/>
 
-            <div class="col-xs-12" onload="initialize()" onunload="GUnload()">
+            <div class="task-map">
                 <h3>1. Google Maps</h3>
-                <p>
-                    <label for="sityname">Название города: </label>
-                    <input type="text" name="sityname" id="sityname" />
-                    <input type="button" onclick="getAdress()" value="Найти" />
-                </p>
-                <div id="map_canvas" style="width: 600px; height: 400px"></div>
+                <div id="map-lat-lng">Lat and Lng - in the console <span>click "Ctrl+Shift+J" or
+                    F12</span></div>
+                <div class="map-wrap">
+                    <input id="pac-input" class="controls" type="text" placeholder="Search">
+                    <div id="map"></div>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="col-xs-12">
+                <h3>2. Free API 1</h3>
+                <section class="center love">
+                    <h4><i class="fa fa-heart" aria-hidden="true"></i> Love <i class="fa fa-venus-mars" aria-hidden="true"></i> Calculator <i class="fa fa-heart" aria-hidden="true"></i></h4>
+                    <p>To find out what the chances for you and your dream partner are, just fill in both full names
+                        (both first and last name) in the two text boxes below, and press Calculate.
+                        Please enter the two names to be analyzed:</p>
+                    <input id="name1" type="text" placeholder="Name of person 1">
+                    <input id="name2" type="text" placeholder="Name of person 2">
+                    <input id="loveBTN" type="button" value="Check">
+                    <p class="loveResult"><i class="fa fa-heart" aria-hidden="true"></i><span id="loveResult"></span><i class="fa fa-heartbeat" aria-hidden="true"></i></p>
+                </section>
+            </div>
+            <hr/>
+
+            <div class="col-xs-12">
+                <h3>3. Free API 2</h3>
+                <section class="center weather">
+                    <h4><i class="fa fa-cloud" aria-hidden="true"></i> Weather <i class="fa fa-sun-o yellow" aria-hidden="true"></i></h4>
+                    <p>Display Weather forecast data by latitude and longitude. Get raw weather data OR simple label
+                        description of weather forecast of some places.</p>
+                    <input id="lat" type="text" placeholder="Latitude">
+                    <input id="lng" type="text" placeholder="Longtitude">
+                    <input id="weatherBTN" type="button" value="Show">
+                    <p class="weatherResult"><span id="weatherResult"></span></p>
+                </section>
             </div>
 
         </div>
 
     </div>
 </div>
+
+<script src="js/lesson9.js"></script>
 
 </body>
 
