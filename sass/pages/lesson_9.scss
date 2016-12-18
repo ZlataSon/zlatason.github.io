@@ -1,3 +1,11 @@
+/*===================
+   Lesson 9
+   ====================*/
+
+/*===================
+   Google map API
+   ====================*/
+
 #lesson9 {
   #map {
     height: 100%;
@@ -75,44 +83,15 @@
   }
 }
 
-.love {
+/*===================
+   Weather
+   ====================*/
+
+#lesson9 .weather {
   h4 {
-    color: #cc0000;
-  }
-
-  input {
-    background: #cc9c98;
-    border-radius: 15px;
-    color: #651717;
-    -webkit-appearance: none;
-    padding: 7px;
-  }
-
-  /* Webkit */
-  ::-webkit-input-placeholder { color: #616161; }
-
-  /* Firefox 4-18 */
-  :-moz-placeholder { color: #616161; }
-
-  /* Firefox 19+ */
-  ::-moz-placeholder { color: #616161; }
-
-  /* IE10+ */
-  :-ms-input-placeholder { color: #616161; }
-
-}
-
-#loveResult,
-.loveResult {
-  color: #cc0000;
-  padding: 15px;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.weather {
-  h4 {
-    color: #0f18cc;
+    color: #00b4ef;
+    font-size: 30px;
+    text-shadow: 2px 2px 3px #171b21;
   }
 
   .yellow {
@@ -143,13 +122,54 @@
 
 #weatherResult,
 .weatherResult {
-  color: #0f18cc;
+  color: #00b4ef;
   padding: 15px;
   font-size: 20px;
   font-weight: 700;
+  text-shadow: 2px 2px 3px #171b21;
 
   img {
     width: 200px;
     height: auto;
   }
+}
+
+/*===================
+   Love calculate
+   ====================*/
+
+#lesson9 .love {
+  h4 {
+    color: #cc0000;
+    font-size: 30px;
+  }
+
+  input {
+    background: #cc9c98;
+    border-radius: 15px;
+    color: #651717;
+    -webkit-appearance: none;
+    padding: 7px;
+  }
+
+  /* Webkit */
+  ::-webkit-input-placeholder { color: #616161; }
+
+  /* Firefox 4-18 */
+  :-moz-placeholder { color: #616161; }
+
+  /* Firefox 19+ */
+  ::-moz-placeholder { color: #616161; }
+
+  /* IE10+ */
+  :-ms-input-placeholder { color: #616161; }
+
+}
+
+#loveResult,
+.loveResult {
+  color: #cc0000;
+  padding: 15px;
+  font-size: 28px;
+  font-weight: 700;
 }

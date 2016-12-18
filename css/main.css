@@ -2517,6 +2517,12 @@ span.done {
   left: 210px;
   top: 210px; }
 
+/*===================
+   Lesson 9
+   ====================*/
+/*===================
+   Google map API
+   ====================*/
 #lesson9 #map {
   height: 100%;
   text-shadow: none; }
@@ -2583,26 +2589,71 @@ span.done {
   width: 345px;
   color: #2b2b2b; }
 
-.love {
+/*===================
+   Weather
+   ====================*/
+#lesson9 .weather {
   /* Webkit */
   /* Firefox 4-18 */
   /* Firefox 19+ */
   /* IE10+ */ }
-  .love h4 {
-    color: #cc0000; }
-  .love input {
+  #lesson9 .weather h4 {
+    color: #00b4ef;
+    font-size: 30px;
+    text-shadow: 2px 2px 3px #171b21; }
+  #lesson9 .weather .yellow {
+    color: #e8de00; }
+  #lesson9 .weather input {
+    background: #68ccc7;
+    border-radius: 15px;
+    color: #060857;
+    -webkit-appearance: none;
+    padding: 7px; }
+  #lesson9 .weather ::-webkit-input-placeholder {
+    color: #616161; }
+  #lesson9 .weather :-moz-placeholder {
+    color: #616161; }
+  #lesson9 .weather ::-moz-placeholder {
+    color: #616161; }
+  #lesson9 .weather :-ms-input-placeholder {
+    color: #616161; }
+
+#weatherResult,
+.weatherResult {
+  color: #00b4ef;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 3px #171b21; }
+  #weatherResult img,
+  .weatherResult img {
+    width: 200px;
+    height: auto; }
+
+/*===================
+   Love calculate
+   ====================*/
+#lesson9 .love {
+  /* Webkit */
+  /* Firefox 4-18 */
+  /* Firefox 19+ */
+  /* IE10+ */ }
+  #lesson9 .love h4 {
+    color: #cc0000;
+    font-size: 30px; }
+  #lesson9 .love input {
     background: #cc9c98;
     border-radius: 15px;
     color: #651717;
     -webkit-appearance: none;
     padding: 7px; }
-  .love ::-webkit-input-placeholder {
+  #lesson9 .love ::-webkit-input-placeholder {
     color: #616161; }
-  .love :-moz-placeholder {
+  #lesson9 .love :-moz-placeholder {
     color: #616161; }
-  .love ::-moz-placeholder {
+  #lesson9 .love ::-moz-placeholder {
     color: #616161; }
-  .love :-ms-input-placeholder {
+  #lesson9 .love :-ms-input-placeholder {
     color: #616161; }
 
 #loveResult,
@@ -2611,38 +2662,3 @@ span.done {
   padding: 15px;
   font-size: 28px;
   font-weight: 700; }
-
-.weather {
-  /* Webkit */
-  /* Firefox 4-18 */
-  /* Firefox 19+ */
-  /* IE10+ */ }
-  .weather h4 {
-    color: #0f18cc; }
-  .weather .yellow {
-    color: #e8de00; }
-  .weather input {
-    background: #68ccc7;
-    border-radius: 15px;
-    color: #060857;
-    -webkit-appearance: none;
-    padding: 7px; }
-  .weather ::-webkit-input-placeholder {
-    color: #616161; }
-  .weather :-moz-placeholder {
-    color: #616161; }
-  .weather ::-moz-placeholder {
-    color: #616161; }
-  .weather :-ms-input-placeholder {
-    color: #616161; }
-
-#weatherResult,
-.weatherResult {
-  color: #0f18cc;
-  padding: 15px;
-  font-size: 20px;
-  font-weight: 700; }
-  #weatherResult img,
-  .weatherResult img {
-    width: 200px;
-    height: auto; }
