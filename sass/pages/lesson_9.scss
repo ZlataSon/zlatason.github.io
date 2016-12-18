@@ -114,8 +114,25 @@
     font-size: 11px;
   }
 
+  .gm-style .gm-style-iw {
+    max-width: 300px;
+  }
+
+  .gm-style,
+  .gm-style span {
+    color: #2b2b2b;
+  }
+
   .gm-style .gm-style-iw > div{
     overflow: inherit !important;
+    color: #2b2b2b;
+  }
+
+  .gm-style .gm-style-iw > div > div:first-line {
+    color: rgb(144, 245, 255);
+    text-shadow: 0.5px 0.5px 2px #040538;
+    font-size: 13px;
+    font-weight: 700;
   }
 
   .poi-info-window .full-width {

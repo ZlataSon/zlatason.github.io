@@ -78,11 +78,23 @@ function initAutocomplete() {
             markers.push(new google.maps.Marker({
                 map: map,
                 icon: icon,
-                title: place.name,
+                title: place.name + "<br/>" + place.geometry.location,
                 position: place.geometry.location,
                 lat: place.geometry.location.lat(),
-                lng: place.geometry.location.lng()
+                lng: place.geometry.location.lng(),
+                animation: google.maps.Animation.DROP,
             }));
+
+            var infowindow = new google.maps.InfoWindow({
+                content: place.name + "<br/>" + "Address: " + place.formatted_address
+                + "<br/>" + place.geometry.location,
+            });
+
+            markers.forEach(function (marker) {
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(map,marker);
+                });
+            });
 
             console.log("Lat: " + place.geometry.location.lat());
             console.log("Lng: " + place.geometry.location.lng());
@@ -98,6 +110,7 @@ function initAutocomplete() {
             }
         });
         map.fitBounds(bounds);
+
     });
 }
 

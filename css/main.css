@@ -2617,8 +2617,22 @@ span.done {
   font-weight: 300;
   font-size: 11px; }
 
+#lesson9 .gm-style .gm-style-iw {
+  max-width: 300px; }
+
+#lesson9 .gm-style,
+#lesson9 .gm-style span {
+  color: #2b2b2b; }
+
 #lesson9 .gm-style .gm-style-iw > div {
-  overflow: inherit !important; }
+  overflow: inherit !important;
+  color: #2b2b2b; }
+
+#lesson9 .gm-style .gm-style-iw > div > div:first-line {
+  color: #90f5ff;
+  text-shadow: 0.5px 0.5px 2px #040538;
+  font-size: 13px;
+  font-weight: 700; }
 
 #lesson9 .poi-info-window .full-width {
   width: 180px;
