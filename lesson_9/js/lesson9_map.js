@@ -78,7 +78,7 @@ function initAutocomplete() {
             markers.push(new google.maps.Marker({
                 map: map,
                 icon: icon,
-                title: place.name + "<br/>" + place.geometry.location,
+                title: place.name + " " + place.geometry.location,
                 position: place.geometry.location,
                 lat: place.geometry.location.lat(),
                 lng: place.geometry.location.lng(),
