@@ -81,6 +81,14 @@
   background-size: cover;
 }
 
+#lesson10 {
+  background: rgba(120, 152, 199, 0.78) url("../img/bg_l10.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 #main-body .wrapper1 {
   margin: 55px;
   padding: 20px;
@@ -176,4 +184,12 @@
   min-height: 200px;
   background: rgba(120, 152, 199, 0.78);
   color: rgb(255, 255, 255);
+}
+
+#lesson10 .wrapper {
+  margin: 55px;
+  padding: 20px;
+  min-height: 200px;
+  background: rgba(22, 68, 118, 0.8);
+  color: white;
 }
