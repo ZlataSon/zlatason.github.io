@@ -2759,3 +2759,6 @@ span.done {
 
 #lesson10 .collapsible.popout > li {
   padding: 2px; }
+
+#lesson10 .parallax-container {
+  height: 300px; }
