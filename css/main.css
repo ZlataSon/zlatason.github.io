@@ -2756,3 +2756,6 @@ span.done {
 
 #lesson10 .collapsible-header {
   color: #1a0f50; }
+
+#lesson10 .collapsible.popout > li {
+  padding: 2px; }
