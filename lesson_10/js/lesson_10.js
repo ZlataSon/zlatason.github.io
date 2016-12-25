@@ -36,6 +36,7 @@ function newsAnalysis(data) {
         text += " " + item.title;
         $("#result .carousel.carousel-slider").append('<a class="carousel-item" >' + item.title + '</a>');
     });
+
     $('#result .carousel.carousel-slider').carousel({full_width: true});
     $('#result .carousel.carousel-slider').carousel();
 
@@ -75,10 +76,12 @@ function newsAnalysis(data) {
 
     var itemsLong = "", itemsShort = "";
     for (var i = 0, n = arr.length - 1; i < 5; i++, n--) {
-        itemsShort += arr[i].word + " ";
-        itemsLong += arr[n].word + " ";
+        itemsShort += arr[i].word + "; ";
+        itemsLong += arr[n].word + "; ";
     }
     console.log(itemsShort+' / '+itemsLong);
+    $("#shortW").append('<p>' + itemsShort + "</p>");
+    $("#longW").append('<p>' + itemsLong + "</p>");
 
     var arrMost = arrword.sort(function (a, b) {
         if (a.count < b.count) return 1;
@@ -90,13 +93,21 @@ function newsAnalysis(data) {
     for (var i = 0; i < 5; i++) {
         itemsMost += arrMost[i].word + " (" + arrMost[i].count + "); " ;
     }
+
+    $(document).ready(function(){
+        $('.collapsible').collapsible();
+    });
+
     console.log(itemsMost);
+    $("#mostW").append('<p>' + itemsMost + "</p>");
 }
 
 $(document).ready(function(){
+    $('.carousel').carousel({full_width: false});
     $('.carousel').carousel();
     setInterval(function () {
        $('.carousel').carousel('next');
     },3000)
 });
+
 

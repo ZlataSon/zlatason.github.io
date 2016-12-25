@@ -2,4 +2,27 @@
   hr {
     height: 1px !important;
   }
+
+  #result .carousel.carousel-slider {
+    min-height: 250px;
+    height: 250px;
+    padding: 5px;
+  }
+
+  #result .carousel.carousel-slider .carousel-item {
+    color: #02003b;
+    border-radius: 15px;
+    min-height: 200px;
+    height: 200px;
+    padding: 65px 25px;
+    background: #5b4bf4; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(#f1f1f1, #289bba, #1a0f50); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#f1f1f1, #289bba, #1a0f50); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#f1f1f1, #289bba, #1a0f50); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#f1f1f1, #289bba, #1a0f50); /* Standard syntax */
+  }
+
+  .collapsible-header {
+    color: #1a0f50;
+  }
 }
