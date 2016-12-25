@@ -1310,7 +1310,7 @@ span {
   background-size: cover; }
 
 #lesson10 {
-  background: rgba(120, 152, 199, 0.78) url("../img/bg_l10.jpg") no-repeat fixed center center;
+  background: rgba(41, 64, 176, 0.8) url("../img/bg-christmas.jpg") no-repeat fixed center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1404,7 +1404,7 @@ span {
   margin: 55px;
   padding: 20px;
   min-height: 200px;
-  background: rgba(22, 68, 118, 0.8);
+  background: rgba(41, 64, 176, 0.8);
   color: white; }
 
 /*===================
@@ -2728,3 +2728,6 @@ span.done {
   font-size: 28px;
   font-weight: 700;
   text-shadow: 2px 2px 3px #211817; }
+
+#lesson10 hr {
+  height: 1px !important; }
