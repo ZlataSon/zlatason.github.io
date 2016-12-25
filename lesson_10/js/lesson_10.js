@@ -27,8 +27,9 @@ function newsAnalysis(data) {
         "ще", "які", "якщо", "їх", "через", "до", "не", "що", "й", "за", "ле", "то", "майже", "понад", "як", "так", "ні", "що", "щодо", "із", "зі",
         "з", "для"];
 
-    $("#result").append("<div class='carousel carousel-slider'></div>");
+    if ($("#result .carousel.carousel-slider").length==0) $("#result").append("<div class='carousel carousel-slider'></div>");
 
+    $("#result .carousel.carousel-slider").empty().removeClass("initialized");
     data.items.forEach(function (item) {
         news.push(item.title);
         //<a class="carousel-item" href="#one!"><img src="http://lorempixel.com/800/400/food/1"></a>
@@ -76,11 +77,13 @@ function newsAnalysis(data) {
 
     var itemsLong = "", itemsShort = "";
     for (var i = 0, n = arr.length - 1; i < 5; i++, n--) {
-        itemsShort += arr[i].word + "; ";
-        itemsLong += arr[n].word + "; ";
+        itemsShort += arr[i].word + "; <br>";
+        itemsLong += arr[n].word + "; <br>";
     }
     console.log(itemsShort+' / '+itemsLong);
+    $("#shortW").empty();
     $("#shortW").append('<p>' + itemsShort + "</p>");
+    $("#longW").empty();
     $("#longW").append('<p>' + itemsLong + "</p>");
 
     var arrMost = arrword.sort(function (a, b) {
@@ -91,7 +94,7 @@ function newsAnalysis(data) {
 
     var itemsMost = "";
     for (var i = 0; i < 5; i++) {
-        itemsMost += arrMost[i].word + " (" + arrMost[i].count + "); " ;
+        itemsMost += arrMost[i].word + " (" + arrMost[i].count + "); <br>" ;
     }
 
     $(document).ready(function(){
@@ -99,6 +102,7 @@ function newsAnalysis(data) {
     });
 
     console.log(itemsMost);
+    $("#mostW").empty();
     $("#mostW").append('<p>' + itemsMost + "</p>");
 }
 
