@@ -29,6 +29,8 @@ function newsAnalysis(data) {
 
     if ($("#result .carousel.carousel-slider").length==0) $("#result").append("<div class='carousel carousel-slider'></div>");
 
+    $('#start-carousel').removeClass('carousel ').addClass('hide');
+
     $("#result .carousel.carousel-slider").empty().removeClass("initialized");
     data.items.forEach(function (item) {
         news.push(item.title);
