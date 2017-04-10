@@ -10,7 +10,7 @@
 }
 
 #lesson1 {
-  background: rgb(67, 72, 36) url("../img/bg_l1.jpg") no-repeat fixed center center;
+  background: #19588f url(../img/bg_l1.jpg) no-repeat fixed center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -105,6 +105,14 @@
   background-size: cover;
 }
 
+#lesson-13 {
+  background: rgba(164, 188, 56, 0.8) url("../img/bg_l13.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 #main-body .wrapper1 {
   margin: 55px;
   padding: 20px;
@@ -124,7 +132,7 @@
   margin: 55px;
   padding: 20px;
   min-height: 200px;
-  background: rgba(67, 72, 36, 0.9);
+  background: rgba(25, 88, 143, 0.8);
   color: rgb(255, 255, 255);
 }
 
@@ -223,5 +231,13 @@
   padding: 20px;
   min-height: 200px;
   background: rgba(188,37,11,0.7);
+  color: white;
+}
+
+#lesson-13 .wrapper {
+  margin: 55px;
+  padding: 20px;
+  min-height: 200px;
+  background: rgba(180, 188, 43, 0.8);
   color: white;
 }
