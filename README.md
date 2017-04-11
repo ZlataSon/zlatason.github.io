@@ -20,5 +20,5 @@ You can see my projects here  https://zlatason.github.io
  * Lesson 11  - JS - JS - Node JS, MongoDB, express;
  * Lesson 12  - JS - Angular1 (Portfolio);
  * Lesson 13  - JS - Pass-callbacks;
- * Graduation Project  - Socket.io chat & ReactJS game;
- * Finish Project  - Meteor JS & React JS seb site "ATO"
+ * Graduation Project  - Socket.io chat & ReactJS game (http://graduation-project.herokuapp.com)
+ * Finish Project  - Meteor JS & React JS website "ATO" (https://cards-ato.herokuapp.com)
